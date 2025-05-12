@@ -1,128 +1,123 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Gaurav Chaudhary | Academic Website</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <style>
-    body { padding-top: 3rem; padding-bottom: 3rem; }
-    .section { margin-top: 3rem; }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurav Chaudhary's Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f4f4f9;
+            color: #333;
+        }
+
+        header, footer {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 1em;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+
+        main {
+            padding: 20px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
-<div class="container">
-  <header class="text-center mb-4">
+
+<header>
     <h1>Gaurav Chaudhary</h1>
-    <p>
-      <a href="mailto:gauravch@iitk.ac.in">gauravch@iitk.ac.in</a> |
-      <a href="tel:+917737490113">+91 7737490113</a> |
-      Kanpur, India |
-      <a href="https://linsats.github.io/" target="_blank">Personal Site</a>
-    </p>
-  </header>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#publications">Publications</a></li>
+            <li><a href="#skills">Skills</a></li>
+        </ul>
+    </nav>
+    <p><a href="tel:+917737490113">+91 7737490113</a> | <a href="mailto:gauravch@iitk.ac.in">gauravch@iitk.ac.in</a> | Kanpur, India</p>
+</header>
 
-  <section>
-    <h2>Professional Summary</h2>
-    <p>Ph.D. candidate specializing in Machine Learning, Reinforcement Learning, and Computer Vision with experience in developing sample-efficient algorithms and advanced control strategies. Skilled in real-world robotics applications and large-scale simulation environments. Strong background in deep learning and intelligent systems.</p>
-  </section>
+<main>
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Ph.D. candidate specializing in Machine Learning, Reinforcement Learning, and Computer Vision. Experienced in developing sample-efficient algorithms and advanced control strategies with a robust background in robotics applications and large-scale simulations.</p>
+    </section>
 
-  <section class="section">
-    <h2>Research Interests</h2>
-    <ul>
-      <li>Reinforcement Learning: Curriculum Learning, Sample Efficiency, Exploration and Offline RL</li>
-      <li>Computer Vision: Segmentation, Object Detection, Active Perception, Image Correction</li>
-      <li>Robot Learning: Manipulation, Control Systems, and Policy Optimization</li>
-    </ul>
-  </section>
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li><strong>Ph.D. in Electrical Engineering</strong>, IIT Kanpur, CGPA: 8.8/10.0 (Jan 2020 - Present)</li>
+            <li><strong>M.Tech in Electrical Engineering</strong>, NIT Kurukshetra, CGPA: 8.7/10.0 (Aug 2014 - Jul 2016)</li>
+            <li><strong>B.Tech in Electronics and Communication Engineering</strong>, RTU KOTA, CGPA: 69.8% (Jul 2009 - Jul 2013)</li>
+        </ul>
+    </section>
 
-  <section class="section">
-    <h2>Education</h2>
-    <ul>
-      <li><strong>IIT Kanpur</strong>, PhD in Electrical Engineering (CGPA: 8.8/10), Jan 2020 – Present</li>
-      <li><strong>NIT Kurukshetra</strong>, M.Tech in Electrical Engineering (CGPA: 8.7/10), 2014 – 2016</li>
-      <li><strong>RTU Kota</strong>, B.Tech in Electronics & Communication (69.8%), 2009 – 2013</li>
-    </ul>
-  </section>
+    <section id="experience">
+        <h2>Professional Experience</h2>
+        <h3>GLA University, Assistant Professor (Jan 2018 - Dec 2019)</h3>
+        <ul>
+            <li>Taught courses in Control Systems, Communication Systems, and Electronics.</li>
+            <li>Supervised undergraduate projects in Automation and Control.</li>
+            <li>Served as departmental placement coordinator.</li>
+        </ul>
+        
+        <h3>Autronicals Infotech Pvt. Ltd., Trainer (Aug 2016 - Dec 2017)</h3>
+        <ul>
+            <li>Organized workshops on embedded systems and robotics in engineering colleges.</li>
+            <li>Designed curriculum and delivered training sessions on robotics and control systems.</li>
+        </ul>
+    </section>
 
-  <section class="section">
-    <h2>Research Internship</h2>
-    <p><strong>NUS Singapore</strong> – Visiting Scholar (Aug–Dec 2023)</p>
-    <ul>
-      <li>Implemented Dreamer, TD3, and SAC on DiffClothAI</li>
-      <li>Created control pipeline for Flexiv Rizon-4 arm</li>
-      <li>Co-authored "InsertingAnything:..." (Differentiable Physics)</li>
-    </ul>
-  </section>
+    <section id="publications">
+        <h2>Publications</h2>
+        <ul>
+            <li>“Match or Replay: Self-Imitating Proximal Policy Optimization” - AAAI Conference (2025, Under Review)</li>
+            <li>“Policy Confidence Constrained Automatic Curriculum Learning for Robotic Manipulation” - AAAI Conference (2025, Under Review)</li>
+            <li>“Bin-picking of Novel Objects through Category-Agnostic-Segmentation: RGB Matters” - IEEE IRC (2023)</li>
+            <li>“Active Perception System for Enhanced Visual Signal Recovery Using Deep Reinforcement Learning” - ICASSP (2023)</li>
+        </ul>
+    </section>
 
-  <section class="section">
-    <h2>Experience</h2>
-    <ul>
-      <li><strong>IIT Kanpur</strong> – Sr. Student Research Associate (2022–2023)</li>
-      <li><strong>GLA University</strong> – Assistant Professor (2018–2019)</li>
-      <li><strong>Autronicals Infotech</strong> – Robotics Trainer (2016–2017)</li>
-    </ul>
-  </section>
+    <section id="skills">
+        <h2>Skills</h2>
+        <ul>
+            <li><strong>Languages:</strong> Python, MATLAB, C++</li>
+            <li><strong>Libraries:</strong> OpenCV, Scikit-Learn, NumPy, Pandas, Matplotlib</li>
+            <li><strong>Frameworks:</strong> PyTorch, TensorFlow, Jax</li>
+            <li><strong>Robotic Platforms:</strong> UR10, Flexiv Rizon-4</li>
+        </ul>
+    </section>
+</main>
 
-  <section class="section">
-    <h2>Publications</h2>
-    <ul>
-      <li>Self-Distilled Rewards for Offline RL – TMLR (submitted)</li>
-      <li>MOORL: Integrating Offline-Online RL – TMLR (pending)</li>
-      <li>Self-Imitating PPO – TMLR (pending)</li>
-      <li>TEACH: Temporal Variance Curriculum – TMLR (pending)</li>
-      <li>Bin-Picking via RGB Segmentation – IEEE IRC 2023</li>
-      <li>Active Perception via DRL – ICASSP 2023</li>
-      <li>3-DOF Manipulator Control – ICPEICES 2016</li>
-      <li>Tracking Control of Manipulator – IJATEE 2016</li>
-    </ul>
-  </section>
+<footer>
+    <p>&copy; 2023 Gaurav Chaudhary</p>
+</footer>
 
-  <section class="section">
-    <h2>Skills</h2>
-    <ul>
-      <li>Languages: Python, MATLAB, C++</li>
-      <li>Libraries: OpenCV, Scikit-Learn, NumPy, Pandas, Matplotlib</li>
-      <li>Frameworks: PyTorch, TensorFlow, JAX</li>
-      <li>Robotics: UR10, Flexiv Rizon-4</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Awards</h2>
-    <ul>
-      <li>Best Paper – National Conference, MNIT Jaipur</li>
-      <li>Top 1% – GATE 2014</li>
-      <li>1st Place – Circuit Design Competition, 2011</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Reviewer</h2>
-    <p>ICASSP | IJCNN | IROS</p>
-  </section>
-
-  <section class="section">
-    <h2>Teaching Assistant</h2>
-    <ul>
-      <li>EE 653A: Digital Control (Summer 2020)</li>
-      <li>EE 604: Image Processing (Summer 2022)</li>
-      <li>ESC 201: Introduction to Electronics (Fall 2024)</li>
-    </ul>
-  </section>
-
-  <section class="section">
-    <h2>Links</h2>
-    <ul>
-      <li><a href="https://openreview.net/forum?id=F5K94JI2Jb">Paper 1</a></li>
-      <li><a href="https://openreview.net/forum?id=PHsfZnF2FC">Paper 2</a></li>
-      <li><a href="https://openreview.net/forum?id=54TO3KUoYf">Paper 3</a></li>
-      <li><a href="https://openreview.net/forum?id=pRPYXugNwc">Paper 4</a></li>
-      <li><a href="https://doi.org/10.1109/ICASSP49357.2023.10097084">ICASSP 2023</a></li>
-      <li><a href="https://doi.org/10.1109/ICPEICES.2016.7853458">ICPEICES 2016</a></li>
-    </ul>
-  </section>
-</div>
 </body>
 </html>
