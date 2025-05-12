@@ -6,45 +6,85 @@
     <title>Gaurav Chaudhary's Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            line-height: 1.6;
-            background-color: #f4f4f9;
+            background-color: #f4f6f9;
             color: #333;
         }
 
         header, footer {
-            background-color: #4CAF50;
-            color: white;
+            background-color: #333;
+            color: #fff;
             text-align: center;
             padding: 1em;
+            margin-bottom: 20px;
         }
 
         nav ul {
             list-style: none;
             padding: 0;
+            margin: 0;
         }
 
         nav ul li {
             display: inline;
-            margin-right: 20px;
+            margin-right: 15px;
         }
 
         nav ul li a {
-            color: white;
+            color: #ffc107;
             text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #fff;
         }
 
         main {
             padding: 20px;
-            max-width: 800px;
-            margin: 0 auto;
+            max-width: 900px;
+            margin: auto;
+            background-color: #fff;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            border-radius: 8px;
         }
 
         section {
-            margin-bottom: 40px;
+            margin-bottom: 30px;
         }
+
+        h2 {
+            border-bottom: 2px solid #4caf50;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            color: #4caf50;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        ul li {
+            padding: 5px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        footer p {
+            margin: 0;
+        }
+
+        .contact-links a {
+            color: #ffc107;
+            text-decoration: none;
+            margin-right: 10px;
+        }
+
+        .contact-links a:hover {
+            text-decoration: underline;
+        }
+
     </style>
 </head>
 <body>
@@ -60,7 +100,7 @@
             <li><a href="#skills">Skills</a></li>
         </ul>
     </nav>
-    <p><a href="tel:+917737490113">+91 7737490113</a> | <a href="mailto:gauravch@iitk.ac.in">gauravch@iitk.ac.in</a> | Kanpur, India</p>
+    <p class="contact-links"><a href="tel:+917737490113">+91 7737490113</a> | <a href="mailto:gauravch@iitk.ac.in">gauravch@iitk.ac.in</a> | Kanpur, India</p>
 </header>
 
 <main>
@@ -80,17 +120,20 @@
 
     <section id="experience">
         <h2>Professional Experience</h2>
-        <h3>GLA University, Assistant Professor (Jan 2018 - Dec 2019)</h3>
         <ul>
-            <li>Taught courses in Control Systems, Communication Systems, and Electronics.</li>
-            <li>Supervised undergraduate projects in Automation and Control.</li>
-            <li>Served as departmental placement coordinator.</li>
-        </ul>
-        
-        <h3>Autronicals Infotech Pvt. Ltd., Trainer (Aug 2016 - Dec 2017)</h3>
-        <ul>
-            <li>Organized workshops on embedded systems and robotics in engineering colleges.</li>
-            <li>Designed curriculum and delivered training sessions on robotics and control systems.</li>
+            <li><strong>GLA University, Assistant Professor (Jan 2018 - Dec 2019)</strong>
+                <ul>
+                    <li>Taught courses in Control Systems, Communication Systems, and Electronics.</li>
+                    <li>Supervised undergraduate projects in Automation and Control.</li>
+                    <li>Served as departmental placement coordinator.</li>
+                </ul>
+            </li>
+            <li><strong>Autronicals Infotech Pvt. Ltd., Trainer (Aug 2016 - Dec 2017)</strong>
+                <ul>
+                    <li>Organized workshops on embedded systems and robotics in engineering colleges.</li>
+                    <li>Designed curriculum and delivered training sessions on robotics and control systems.</li>
+                </ul>
+            </li>
         </ul>
     </section>
 
@@ -116,7 +159,7 @@
 </main>
 
 <footer>
-    <p>&copy; 2023 Gaurav Chaudhary</p>
+    <p>&copy; 2023 Gaurav Chaudhary. All Rights Reserved.</p>
 </footer>
 
 </body>
