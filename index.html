@@ -1,357 +1,371 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Gaurav Chaudhary</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600|Roboto:400,700" rel="stylesheet">
-    <style>
-        body {
-            max-width: 860px;
-            margin: 36px auto;
-            padding: 0 18px;
-            font-family: 'Titillium Web', 'Verdana', Arial, sans-serif;
-            background: #fafafd;
-            color: #212133;
-        }
-        .container { background: #fff; border-radius: 12px; box-shadow:0 2px 10px #0001; padding: 32px; }
-        .header { display: flex; flex-wrap: wrap; align-items: center; padding-bottom:18px; border-bottom:1px solid #eee;}
-        .headshot {
-            width: 125px;
-            height: 125px;
-            border-radius: 18px;
-            margin-right: 32px;
-            object-fit: cover;
-            box-shadow: 0 2px 12px #75757522;
-        }
-        .headline {
-            flex: 1;
-            min-width: 210px;
-        }
-        .name {
-            font-size: 2.3em;
-            font-family: 'Titillium Web', sans-serif;
-            font-weight: 600;
-            letter-spacing:0.03em;
-            color: #1a2b56;
-        }
-        .title {
-            font-size: 1.16em;
-            color: #3c4470;
-            margin: 2px 0 7px 0;
-            font-weight: 500;
-        }
-        .contact {
-            font-size: 1em;
-            color: #444;
-            margin-bottom: 8px;
-        }
-        .contact a { color: #1772d0; text-decoration: none; }
-        .contact a:hover { color: #e07b04; }
-        .social {
-            margin-top: 5px;
-        }
-        .social a { margin-right: 15px; color: #1772d0; text-decoration: none; }
-        .social a:hover { color: #e07b04; }
-        @media(max-width:650px){
-            .header{flex-direction:column; align-items:flex-start;}
-            .headshot{margin-right:0;margin-bottom:20px;}
-            .container{padding:16px;}
-        }
-        /* Section styling */
-        section { margin-top:32px; }
-        .section-title {
-            font-family: 'Titillium Web', sans-serif;
-            font-weight: 600;
-            font-size: 1.25em;
-            color: #21213c;
-            margin-bottom: 9px;
-            background: #f1f9ff;
-            padding: 3px 15px;
-            border-left: 7px solid #1772d0;
-            border-radius: 5px 0 0 5px;
-        }
-        a { color: #1772d0; text-decoration:none; }
-        a:hover { color: #e07b04;}
-        ul { margin: 6px 0 10px 14px; }
-        li { margin-bottom: 4px;}
-        .year { color:#999; font-size:0.95em; }
-        .mono { font-family:monospace; color:#2c5656; font-size:1.04em;}
-        .pub-title { color:#193a7a; font-weight:600;}
-        .pub-meta, .pub-meta a { color:#666; font-size: 0.96em;}
-        .skills { display: flex; flex-wrap:wrap; gap:.8em; }
-        .skills li { background:#f4f7ff; padding:2px 13px; border-radius:18px; font-size: 0.99em;list-style:none;}
-        @media(max-width:600px){.skills{flex-direction:column;gap:0;}}
-        .footer-note {
-            text-align: right; color: #bbb; font-size: 0.95em;
-            margin-top:36px;
-        }
-        /* News Section */
-        .news-section { margin-top: 38px; }
-        .news-year {
-            font-size: 1.15em;
-            font-weight: 600;
-            color: #196caf;
-            margin: 16px 0 3px 0;
-            padding: 2px 0 2px 6px;
-            border-left: 4px solid #1772d0;
-            background: #f7f8fa;
-            border-radius: 3px 0 0 3px;
-            display: inline-block;
-        }
-        .news-list {
-            margin: 10px 0 22px 0;
-            padding-left: 20px;
-        }
-        .news-list li { margin-bottom: 6px; line-height: 1.52;}
-        .news-date { font-weight: bold; color:#444; min-width:44px; display: inline-block;}
-        .news-list a { color: #1772d0; text-decoration: underline; }
-        .news-list a:hover { color: #e07b04; }
-    </style>
+  <meta charset="UTF-8">
+  <title>Gaurav Chaudhary</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600|Roboto:400,700" rel="stylesheet">
+  <style>
+    body {
+      max-width: 880px;
+      margin: 36px auto;
+      padding: 0 18px;
+      background: #eceef4;
+      font-family: 'Titillium Web', Verdana, Arial, sans-serif;
+      color: #24243c;
+    }
+    .container { 
+      background: #fff;
+      border-radius: 14px; 
+      box-shadow:0 6px 32px #2221.08;
+      padding: 34px 32px 18px 32px;
+      margin: 22px 0 30px 0;
+    }
+    .header { display: flex; flex-wrap: wrap; align-items: center; border-bottom:1.6px solid #e6e8ee; padding-bottom:20px;}
+    .headshot {
+      width: 120px;
+      height: 120px;
+      border-radius: 18px;
+      margin-right: 36px;
+      object-fit: cover;
+      box-shadow: 0 6px 28px #75757518;
+      border: 4px solid #c9e5fa;
+      background: #c1c6df;
+    }
+    .headline {
+      flex: 1;
+      min-width: 200px;
+    }
+    .name {
+      font-size: 2.45em;
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 700;
+      letter-spacing:0.03em;
+      color: #13457c;
+      text-shadow: 0 3px 28px #b2c9e2ea;
+    }
+    .title {
+      font-size: 1.2em;
+      color: #375180;
+      margin: 2px 0 7px 0;
+      font-weight: 500;
+    }
+    .contact {
+      font-size: 1em;
+      color: #444;
+      margin-bottom: 8px;
+    }
+    .contact a { color: #2290e8; text-decoration: none; }
+    .contact a:hover { color: #e07b04; }
+    .social {
+      margin-top: 4px;
+    }
+    .social a { margin-right: 17px; color: #2290e8; text-decoration: none; font-size: 1.13em;}
+    .social a:hover { color: #ff991a; }
+    @media(max-width:650px){
+      .header{flex-direction:column; align-items:flex-start;}
+      .headshot{margin-right:0;margin-bottom:20px;}
+      .container{padding:15px;}
+    }
+    section { margin-top:33px; }
+    .section-title {
+      font-family: 'Titillium Web', sans-serif;
+      font-weight: 700;
+      font-size: 1.30em;
+      color: #23234a;
+      margin-bottom: 10px;
+      background: linear-gradient(92deg, #eaf3ff 80%, #e8eaee 100%);
+      padding: 4px 18px;
+      border-left: 8px solid #2290e8;
+      border-radius: 5px 0 0 5px;
+      letter-spacing: .03em;
+      box-shadow: 0 1px 10px #dfedff24;
+    }
+    ul { margin: 6px 0 10px 18px; }
+    li { margin-bottom: 4px;}
+    .year { color:#888; font-size:0.96em; }
+    .mono { font-family:monospace; color:#227070; font-size:1.06em;}
+    .pub-title { color: #194a98; font-weight:600;}
+    .pub-meta, .pub-meta a { color:#666; font-size: 0.98em;}
+    .skills { display: flex; flex-wrap:wrap; gap:.8em; }
+    .skills li { background:#f4f7ff; padding:2px 13px; border-radius:18px; font-size: 0.99em;list-style:none;}
+    @media(max-width:600px){.skills{flex-direction:column;gap:0;}}
+    .footer-note {
+      text-align: right; color: #bbb; font-size: 0.98em;
+      margin-top:36px;
+    }
+    /* -- News Section -- */
+    .news-section {
+      background: linear-gradient(96deg,#ebf6ff 60%, #e7e8ee 100%);
+      box-shadow: 0 1px 28px #bfd7fa29;
+      border-radius: 12px;
+      padding: 24px 17px 24px 17px;
+      margin-top: 38px;
+      margin-bottom: 26px;
+      border:1.4px solid #e5f0fd;
+    }
+    .news-section .section-title {
+      margin-top: -6px;
+      margin-bottom: 18px;
+      border-left: 8px solid #2290e8;
+      background: linear-gradient(89deg, #e2f0ff 85%, #e4f5ec 100%);
+    }
+    .news-collapse-btn {
+      width: 100%;
+      background: #f7faff;
+      color: #1c4585;
+      border: none;
+      font-size: 1.1em;
+      font-weight: 700;
+      margin: 13px 0 0px 0;
+      padding: 9px 12px 7px 18px;
+      border-left: 4px solid #2290e8;
+      border-radius: 5px 0 0 5px;
+      cursor: pointer;
+      outline: none;
+      transition: background 0.15s, color 0.15s;
+      text-align: left;
+      letter-spacing:0.01em;
+      position:relative;
+      box-shadow:0 1px 9px #c4d8f525;
+    }
+    .news-collapse-btn:after {
+      content: "▼";
+      float:right;
+      margin-left:10px;
+      font-size: 1.04em;
+      color:#aac2e2;
+      transition: transform 0.25s,color 0.15s;
+    }
+    .news-collapse-btn[aria-expanded="true"]:after {
+      content: "▲";
+      color: #ff991a;
+      transform: rotate(180deg);
+    }
+    .news-list {
+      margin: 6px 0 15px 35px;
+      padding-left: 2px;
+      max-height: 0;
+      overflow: hidden;
+      opacity:0;
+      transition: max-height 0.5s cubic-bezier(0.81,0,0.47,0.89), opacity 0.35s;
+      border-left:2.2px solid #bae1fa;
+      background: linear-gradient(92deg,#f4faff 70%, #e7e8ee 100%);
+      border-radius: 0 5px 7px 0;
+    }
+    .news-list.open {
+      max-height: 600px; /* enough for many items */
+      opacity:1;
+      transition: max-height 0.55s cubic-bezier(0.83,0,0.35,1),opacity 0.42s;
+    }
+    .news-list li { 
+      margin-bottom: 7px; 
+      line-height: 1.62;
+      font-size:1.03em;
+      color: #293a4b;
+      font-weight: 400;
+      letter-spacing:.011em;
+      transition: color .13s;
+    }
+    .news-list li:hover { color:#195fa3; }
+    .news-date {
+      font-weight: bold; 
+      color:#23548a; 
+      min-width:44px; 
+      display: inline-block;
+    }
+    .news-list a { color: #2290e8; text-decoration: underline; }
+    .news-list a:hover { color: #e07b04; }
+    @media(max-width:650px){.news-section{padding:10px 2vw 18px 2vw;}}
+    /* Fancier scrollbar (webkit) */
+    ::-webkit-scrollbar { width: 9px;}
+    ::-webkit-scrollbar-thumb { background: #e5eff9; border-radius: 7px; }
+    ::-webkit-scrollbar-track { background: #fafbff; }
+  </style>
 </head>
 <body>
 <div class="container">
 
-    <!-- ---------- HEADER ----------- -->
-    <div class="header">
-        <img src="https://avatars.githubusercontent.com/u/23332161?s=400&v=4" alt="Gaurav Chaudhary Photo" class="headshot">
-        <div class="headline">
-            <div class="name">Gaurav Chaudhary</div>
-            <div class="title">Ph.D. Candidate, IIT Kanpur</div>
-            <div class="contact">
-                Kanpur, India <br>
-                <a href="mailto:gauravch@iitk.ac.in">gauravch@iitk.ac.in</a> |
-                <a href="tel:+917737490113">+91 7737490113</a>
-            </div>
-            <div class="social">
-                <a href="https://github.com/gauravch-iitk" target="_blank">GitHub</a>
-                <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
-                <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
-            </div>
-        </div>
+  <!-- ---------- HEADER ----------- -->
+  <div class="header">
+    <img src="https://avatars.githubusercontent.com/u/23332161?s=400&v=4" alt="Gaurav Chaudhary Photo" class="headshot">
+    <div class="headline">
+      <div class="name">Gaurav Chaudhary</div>
+      <div class="title">Ph.D. Candidate, Electrical Engineering, IIT Kanpur</div>
+      <div class="contact">
+        Kanpur, India <br>
+        <a href="mailto:gauravch@iitk.ac.in">gauravch@iitk.ac.in</a> |
+        <a href="tel:+917737490113">+91 7737490113</a>
+      </div>
+      <div class="social">
+        <a href="https://github.com/gauravch-iitk" target="_blank">GitHub</a>
+        <a href="https://scholar.google.com" target="_blank">Google Scholar</a>
+        <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
+      </div>
     </div>
+  </div>
 
-    <!-- --------- BIO / ABOUT ---------- -->
-    <section>
-        <div class="section-title">About</div>
-        <div>
-            I am a Ph.D. candidate at IIT Kanpur specializing in Machine Learning, Reinforcement Learning, and Computer Vision, with experience in developing sample-efficient algorithms and advanced control strategies for robotics. My research aims to build intelligent, adaptable systems by integrating deep learning and RL for both simulation and real-world tasks.
-        </div>
-    </section>
-
-    <!-- ---------- NEWS SECTION ----------- -->
-    <section class="news-section">
-      <div class="section-title">News</div>
-      <div class="news-year">2024</div>
-      <ul class="news-list">
-        <li><span class="news-date">Feb:</span> <b>Fast-Fruit-Detector</b> paper accepted to IEEE Robotics and Automation Letters (<b>RA-L</b>), 2024.</li>
-        <li><span class="news-date">Feb:</span> <b>PiX:</b> Dynamic Channel Sampling for ConvNets accepted to CVPR 2024.</li>
-        <li><span class="news-date">Jan:</span> <b>Jetson-SLAM</b> to be presented at ICRA 2024.</li>
-      </ul>
-      <hr>
-      <div class="news-year">2023</div>
-      <ul class="news-list">
-        <li><span class="news-date">Dec:</span> <b>DroneBee</b> UAVs paper accepted to IEEE RA-L, 2023.</li>
-        <li><span class="news-date">Dec:</span> Defended PhD Thesis.</li>
-        <li><span class="news-date">Nov:</span> <b>TMDC</b> microstepping control accepted to IEEE RA-L, 2023.</li>
-        <li><span class="news-date">Oct:</span> <b>Jetson-SLAM</b> accepted to IEEE RA-L, 2023.</li>
-        <li><span class="news-date">Jun:</span> Presented PhD seminar. <a href="https://drive.google.com/file/d/1rMa-LXEcBaZlNVATc6ugGHpL6PdCi4MB/view?usp=drive_link" target="_blank">Teaser Video</a></li>
-      </ul>
-      <hr>
-      <div class="news-year">2022</div>
-      <ul class="news-list">
-        <li><span class="news-date">May:</span> Team ranked 3rd worldwide in DJI Robomaster challenge.</li>
-        <li><span class="news-date">Jan:</span> <b>DeepMI</b>: Mutual Information Framework arXived.</li>
-        <li><span class="news-date">Jan:</span> Mentored IITK undergraduates for DJI Robomaster University AI challenge.</li>
-      </ul>
-      <hr>
-      <div class="news-year">2021</div>
-      <ul class="news-list">
-        <li><span class="news-date">May:</span> One paper accepted to SMC 2021.</li>
-      </ul>
-      <hr>
-      <div class="news-year">2020</div>
-      <ul class="news-list">
-        <li><span class="news-date">Oct:</span> Presented PhD seminar.</li>
-        <li><span class="news-date">Jun:</span> Challenge-2 of MBZIRC 2020 accepted to IROS.</li>
-      </ul>
-      <hr>
-      <div class="news-year">2019</div>
-      <ul class="news-list">
-        <li><span class="news-date">Jul:</span> Computer vision & electronics system lead for MBZIRC 2020, Abu Dhabi.</li>
-        <li><span class="news-date">Jun:</span> Paper accepted to IROS 2019.</li>
-        <li><span class="news-date">Jan:</span> Vision system for Amazon Robotics Challenge 2017 accepted to ICRA 2019.</li>
-      </ul>
-      <hr>
-      <div class="news-year">2018</div>
-      <ul class="news-list">
-        <li><span class="news-date">Aug:</span> Received IROS SDC travel award.</li>
-        <li><span class="news-date">Jul:</span> Joined as PhD student at <a href="https://iitk.ac.in/" target="_blank">IIT Kanpur</a> with Prof. Laxmidhar Behera.</li>
-        <li><span class="news-date">Jun:</span> Paper on textured 3D maps in IROS 2018.</li>
-      </ul>
-    </section>
-
-    <!-- --------------- EDUCATION --------------- -->
-    <section>
-        <div class="section-title">Education</div>
-        <ul>
-            <li>
-                <b>IIT Kanpur</b>, Ph.D. in Electrical Engineering,
-                <span class="year">2020 &ndash; present</span><br>
-                <span class="mono">CGPA: 8.8/10.00</span> <br>
-                Supervisor: Prof. L. Behera
-            </li>
-            <li>
-                <b>NIT Kurukshetra</b>, M.Tech in Electrical Engineering,
-                <span class="year">2014 &ndash; 2016</span><br>
-                <span class="mono">CGPA: 8.7/10.00</span> <br>
-                Supervisor: Prof. J. Ohri
-            </li>
-            <li>
-                <b>RTU Kota</b>, B.Tech in Electronics and Communication Engineering,
-                <span class="year">2009 &ndash; 2013</span><br>
-                <span class="mono">69.8&#37;</span>
-            </li>
-        </ul>
-    </section>
-
-    <!-- ---------- RESEARCH INTERESTS -------- -->
-    <section>
-        <div class="section-title">Research Interests</div>
-        <ul>
-            <li>Reinforcement Learning: curriculum learning, sample efficiency, exploration, offline RL.</li>
-            <li>Computer Vision: segmentation, object detection, active perception, image restoration.</li>
-            <li>Robot Learning: manipulation, control systems, policy optimization.</li>
-        </ul>
-    </section>
-
-    <!-- ---------- CAREER / EXPERIENCE --------- -->
-    <section>
-        <div class="section-title">Experience</div>
-        <ul>
-            <li>
-                <b>National University of Singapore (NUS)</b> — <i>Visiting Scholar</i> (<a href="https://linsats.github.io/" target="_blank">Prof. Lin Shao</a>)<br>
-                <span class="year">Aug 2023 &ndash; Dec 2023</span>
-                <ul>
-                    <li>Implemented RL pipelines (Dreamer, TD3, SAC) for DiffClothAI in cloth/rigid-body insertion.</li>
-                    <li>Built control pipeline for Flexiv Rizon-4 robotic arm real-world insertion tasks.</li>
-                    <li>Co-authored: "InsertingAnything: Model-based Insertion Skill Learning via Differentiable Physics-based Simulation."</li>
-                </ul>
-            </li>
-            <li>
-                <b>GLA University</b> — <i>Assistant Professor</i><br>
-                <span class="year">Jan 2018 &ndash; Dec 2019</span>
-                <ul>
-                    <li>Taught courses: Control, Communication Systems, Electronics.</li>
-                    <li>Supervised 2 undergrad control/automation projects, placement coordination.</li>
-                </ul>
-            </li>
-            <li>
-                <b>Autronicals Infotech Pvt. Ltd.</b> — <i>Trainer</i><br>
-                <span class="year">Aug 2016 &ndash; Dec 2017</span>
-                <ul>
-                    <li>Trained engineering college students in embedded & robotics.</li>
-                    <li>Organized workshops, curriculum design.</li>
-                </ul>
-            </li>
-        </ul>
-    </section>
-
-    <!-- ---------- PUBLICATIONS ----------------- -->
-    <section>
-        <div class="section-title">Selected Publications</div>
-        <ul>
-            <li>
-                <span class="pub-title">G. Chaudhary, L. Behera</span>.
-                Match or Replay: Self-Imitating Proximal Policy.
-                <span class="pub-meta">AAAI Conference on Artificial Intelligence, 2025 (<i>Under Review</i>)</span>
-            </li>
-            <li>
-                <span class="pub-title">G. Chaudhary, L. Behera</span>.
-                Policy Confidence Constrained Automatic Curriculum Learning for Robotic Manipulation.
-                <span class="pub-meta">AAAI Conference on Artificial Intelligence, 2025 (<i>Under Review</i>)</span>
-            </li>
-            <li>
-                <span class="pub-title">P. Raj, S. Bhadang, G. Chaudhary, L. Behera, T. Sandhan</span>.
-                Bin-Picking of Novel Objects through Category-Agnostic Segmentation: RGB Matters.
-                <span class="pub-meta">IEEE IRC, 2023</span>
-            </li>
-            <li>
-                <span class="pub-title">G. Chaudhary, L. Behera, T. Sandhan</span>.
-                Active Perception System for Enhanced Visual Signal Recovery Using Deep RL.
-                <span class="pub-meta">ICASSP 2023, <a href="https://doi.org/10.1109/ICASSP49357.2023.10097084" target="_blank">doi:10.1109/ICASSP49357.2023.10097084</a></span>
-            </li>
-            <li>
-                <span class="pub-title">G. Chaudhary, J. Ohri</span>.
-                3-DOF Parallel Manipulator Control Using PID Controller.
-                <span class="pub-meta">IEEE ICPEICES 2016,
-                <a href="https://doi.org/10.1109/ICPEICES.2016.7853458" target="_blank">doi:10.1109/ICPEICES.2016.7853458</a>
-                </span>
-            </li>
-            <li>
-                <span class="pub-title">G. Chaudhary, J. Ohri</span>. Tracking Control of Parallel Manipulator with 3-DOF. <span class="pub-meta">Int. J. Adv. Tech. Eng. Exp. 2016.</span>
-            </li>
-        </ul>
-    </section>
-
-    <!-- ---------- SKILLS --------------- -->
-    <section>
-        <div class="section-title">Technical Skills</div>
-        <ul class="skills">
-            <li><b>Languages:</b> Python, MATLAB, C++</li>
-            <li><b>Libraries/Frameworks:</b> OpenCV, Scikit-Learn, NumPy, Pandas, Matplotlib, PyTorch, TensorFlow</li>
-            <li><b>Robots:</b> UR10, Flexiv Rizon-4</li>
-        </ul>
-    </section>
-
-    <!-- ---------- AWARDS ---------------- -->
-    <section>
-        <div class="section-title">Awards &amp; Scholarships</div>
-        <ul>
-            <li>Best Paper Award, National Conference on Process Automation and Control, MNIT Jaipur, 2016</li>
-            <li>Top 1 percentile, GATE 2014</li>
-            <li>1st prize, Inter-Institute Circuit Designing, Rajasthan Inst. of Engg. & Tech., 2011</li>
-        </ul>
-    </section>
-
-    <!-- ---------- TEACHING ----------------- -->
-    <section>
-        <div class="section-title">Teaching Assistantships</div>
-        <ul>
-            <li>EE 653A: Digital Control — Summer 2020</li>
-            <li>EE 604: Image Processing — Summer 2022</li>
-            <li>ESC 201: Introduction to Electronics — Fall 2024</li>
-        </ul>
-    </section>
-
-    <!-- ---------- SERVICE ----------------- -->
-    <section>
-        <div class="section-title">Service</div>
-        <ul>
-            <li>Reviewer: ICASSP 2024, 2025</li>
-        </ul>
-    </section>
-
-    <!-- ---------- COURSEWORK --------------- -->
-    <section>
-        <div class="section-title">Relevant Coursework (IIT Kanpur)</div>
-        <ul>
-            <li>ME763A: Robot Manipulators: Dynamics and Control</li>
-            <li>EE698K: Modeling and Representation Techniques for Images</li>
-            <li>EE705A: Intelligent Systems and Control</li>
-        </ul>
-    </section>
-
-    <!-- ---------- REFERENCES --------------- -->
-    <section>
-        <div class="section-title">References</div>
-        <div>Available on request.</div>
-    </section>
-
-    <div class="footer-note">
-        Last updated: June 2024 &nbsp;|&nbsp; Template adapted from academic sites
+  <!-- --------- BIO / ABOUT ---------- -->
+  <section>
+    <div class="section-title">About</div>
+    <div>
+      I am a Ph.D. candidate at IIT Kanpur specializing in Machine Learning, Reinforcement Learning, and Computer Vision, with experience in developing sample-efficient algorithms and advanced control strategies for robotics. My research aims to build intelligent, adaptable systems by integrating deep learning and RL for both simulation and real-world tasks.
     </div>
-</div>
-</body>
-</html>
+  </section>
+
+  <!-- ------------- NEWS SECTION (COLLAPSIBLE) ------------ -->
+  <section class="news-section">
+    <div class="section-title">News</div>
+    <div id="news-years">
+
+      <!-- 2024 -->
+      <button class="news-collapse-btn" type="button" aria-expanded="true" onclick="toggleNews('year2024')">2024</button>
+      <ul class="news-list open" id="year2024">
+        <li><span class="news-date">May:</span> Appointed Teaching Assistant for ESC 201: Introduction to Electronics at IIT Kanpur for Fall 2024.</li>
+        <li><span class="news-date">Apr:</span> Reviewer for ICASSP 2024, 2025.</li>
+      </ul>
+
+      <!-- 2023 -->
+      <button class="news-collapse-btn" type="button" aria-expanded="false" onclick="toggleNews('year2023')">2023</button>
+      <ul class="news-list" id="year2023">
+        <li><span class="news-date">Dec:</span> Completed Research Internship as Visiting Scholar with <a href="https://linsats.github.io/" target="_blank">Prof. Lin Shao</a> at National University of Singapore (NUS).</li>
+        <li><span class="news-date">Aug:</span> Began Research Internship at NUS Singapore, working on RL for object manipulation and Flexiv Rizon-4 robot.</li>
+        <li><span class="news-date">June:</span> Published: "Bin-Picking of Novel Objects through Category-Agnostic Segmentation: RGB Matters" at IEEE IRC 2023.</li>
+        <li><span class="news-date">May:</span> Published: "Active Perception System for Enhanced Visual Signal Recovery Using Deep RL" at ICASSP 2023.</li>
+      </ul>
+
+      <!-- 2022 -->
+      <button class="news-collapse-btn" type="button" aria-expanded="false" onclick="toggleNews('year2022')">2022</button>
+      <ul class="news-list" id="year2022">
+        <li><span class="news-date">Apr:</span> Appointed Teaching Assistant for EE 604: Image Processing, IIT Kanpur.</li>
+        <li><span class="news-date">Jan:</span> Senior Student Research Associate for MeitY-funded project in Robotics and Automation in Agriculture.</li>
+      </ul>
+      
+      <!-- 2021 -->
+      <button class="news-collapse-btn" type="button" aria-expanded="false" onclick="toggleNews('year2021')">2021</button>
+      <ul class="news-list" id="year2021">
+        <li><span class="news-date">Jul:</span> Submitted: “Match or Replay: Self-Imitating Proximal Policy Optimization” (under review).</li>
+        <li><span class="news-date">Apr:</span> Submitted: “Policy Confidence Constrained Automatic Curriculum Learning for Robotic Manipulation” (under review).</li>
+      </ul>
+      
+      <!-- 2020 -->
+      <button class="news-collapse-btn" type="button" aria-expanded="false" onclick="toggleNews('year2020')">2020</button>
+      <ul class="news-list" id="year2020">
+        <li><span class="news-date">Summer:</span> Teaching Assistant for EE 653A: Digital Control, IIT Kanpur.</li>
+      </ul>
+      
+      <!-- 2018 -->
+      <button class="news-collapse-btn" type="button" aria-expanded="false" onclick="toggleNews('year2018')">2018</button>
+      <ul class="news-list" id="year2018">
+        <li><span class="news-date">Jan:</span> Joined GLA University as Assistant Professor in Electronics/Electrical Engineering.</li>
+      </ul>
+      
+      <!-- 2017 -->
+      <button class="news-collapse-btn" type="button" aria-expanded="false" onclick="toggleNews('year2017')">2017</button>
+      <ul class="news-list" id="year2017">
+        <li><span class="news-date">Aug:</span> Joined Autronicals Infotech Pvt. Ltd. as Robotics Trainer, organizing STEM workshops across engineering colleges.</li>
+      </ul>
+      
+      <!-- 2016 -->
+      <button class="news-collapse-btn" type="button" aria-expanded="false" onclick="toggleNews('year2016')">2016</button>
+      <ul class="news-list" id="year2016">
+        <li><span class="news-date">July:</span> <b>Best Paper Award</b> at NCPC, MNIT Jaipur.</li>
+        <li><span class="news-date">July:</span> Published: "3-DOF Parallel Manipulator Control Using PID Controller" at IEEE ICPEICES 2016.</li>
+        <li><span class="news-date">May:</span> Completed M.Tech. from NIT Kurukshetra.</li>
+      </ul>
+      
+      <!-- 2014 -->
+      <button class="news-collapse-btn" type="button" aria-expanded="false" onclick="toggleNews('year2014')">2014</button>
+      <ul class="news-list" id="year2014">
+        <li><span class="news-date">Mar:</span> Ranked in <b>top 1 percentile</b> in GATE 2014.</li>
+      </ul>
+      
+      <!-- 2011 -->
+      <button class="news-collapse-btn" type="button" aria-expanded="false" onclick="toggleNews('year2011')">2011</button>
+      <ul class="news-list" id="year2011">
+        <li><span class="news-date">Aug:</span> Secured <b>First Position</b> in Inter-Institute Circuit Designing Competition, Rajasthan Institute of Engineering and Technology.</li>
+      </ul>
+    </div>
+  </section>
+  <script>
+  // Only one year open at a time; animate with class swap for smooth expand/collapse
+  function toggleNews(divId) {
+    const lists = document.querySelectorAll('.news-list');
+    const btns = document.querySelectorAll('.news-collapse-btn');
+    lists.forEach((ul, i) => {
+      if (ul.id === divId) {
+        let opened = ul.classList.contains('open');
+        if (!opened) {
+          ul.classList.add('open');
+          btns[i].setAttribute('aria-expanded', 'true');
+        } else {
+          ul.classList.remove('open');
+          btns[i].setAttribute('aria-expanded', 'false');
+        }
+      } else {
+        ul.classList.remove('open');
+        btns[i].setAttribute('aria-expanded', 'false');
+      }
+    });
+  }
+  </script>
+
+  <!-- --------------- EDUCATION --------------- -->
+  <section>
+    <div class="section-title">Education</div>
+    <ul>
+      <li>
+        <b>IIT Kanpur</b>, Ph.D. in Electrical Engineering,
+        <span class="year">2020 &ndash; present</span><br>
+        <span class="mono">CGPA: 8.8/10.00</span> <br>
+        Supervisor: Prof. L. Behera
+      </li>
+      <li>
+        <b>NIT Kurukshetra</b>, M.Tech in Electrical Engineering,
+        <span class="year">2014 &ndash; 2016</span><br>
+        <span class="mono">CGPA: 8.7/10.00</span> <br>
+        Supervisor: Prof. J. Ohri
+      </li>
+      <li>
+        <b>RTU Kota</b>, B.Tech in Electronics and Communication Engineering,
+        <span class="year">2009 &ndash; 2013</span><br>
+        <span class="mono">69.8&#37;</span>
+      </li>
+    </ul>
+  </section>
+
+  <!-- ---------- RESEARCH INTERESTS -------- -->
+  <section>
+    <div class="section-title">Research Interests</div>
+    <ul>
+      <li>Reinforcement Learning: curriculum learning, sample efficiency, exploration, offline RL.</li>
+      <li>Computer Vision: segmentation, object detection, active perception, image restoration.</li>
+      <li>Robot Learning: manipulation, control systems, policy optimization.</li>
+    </ul>
+  </section>
+
+  <!-- ---------- CAREER / EXPERIENCE --------- -->
+  <section>
+    <div class="section-title">Experience</div>
+    <ul>
+      <li>
+        <b>National University of Singapore (NUS)</b> — <i>Visiting Scholar</i> (<a href="https://linsats.github.io/" target="_blank">Prof. Lin Shao</a>)<br>
+        <span class="year">Aug 2023 &ndash; Dec 2023</span>
+        <ul>
+          <li>Implemented RL pipelines (Dreamer, TD3, SAC) for DiffClothAI in cloth/rigid-body insertion.</li>
+          <li>Built control pipeline for Flexiv Rizon-4 robotic arm real-world insertion tasks.</li>
+          <li>Co-authored: "InsertingAnything: Model-based Insertion Skill Learning via Differentiable Physics-based Simulation."</li>
+        </ul>
+      </li>
+      <li>
+        <b>GLA University</b> — <i>Assistant Professor</i><br>
+        <span class="year">Jan 2018 &ndash; Dec 2019</span>
+        <ul>
+          <li>Taught courses: Control, Communication Systems, Electronics.</li>
+          <li>Supervised 2 undergrad control/automation projects, placement coordination.</li>
+        </ul>
+      </li>
+      <li>
+        <b>Autronicals Infotech Pvt. Ltd.</b> — <i>Trainer</i><br>
+        <span class="year">Aug 2016 &ndash; Dec 2017</span>
