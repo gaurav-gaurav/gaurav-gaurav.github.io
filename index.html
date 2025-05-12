@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Gaurav Chaudhary</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web:400,600|Roboto:400,700" rel="stylesheet">
     <style>
         body {
@@ -75,12 +76,10 @@
         a:hover { color: #e07b04;}
         ul { margin: 6px 0 10px 14px; }
         li { margin-bottom: 4px;}
-        .year { color:#999; font-size:0.96em; }
+        .year { color:#999; font-size:0.95em; }
         .mono { font-family:monospace; color:#2c5656; font-size:1.04em;}
         .pub-title { color:#193a7a; font-weight:600;}
         .pub-meta, .pub-meta a { color:#666; font-size: 0.96em;}
-        /* Responsive video & img */
-        .video-embed, .img-embed { width:100%; max-width:425px; margin:6px 0; border-radius: 10px; box-shadow:0 2px 10px #eee;}
         .skills { display: flex; flex-wrap:wrap; gap:.8em; }
         .skills li { background:#f4f7ff; padding:2px 13px; border-radius:18px; font-size: 0.99em;list-style:none;}
         @media(max-width:600px){.skills{flex-direction:column;gap:0;}}
@@ -88,6 +87,27 @@
             text-align: right; color: #bbb; font-size: 0.95em;
             margin-top:36px;
         }
+        /* News Section */
+        .news-section { margin-top: 38px; }
+        .news-year {
+            font-size: 1.15em;
+            font-weight: 600;
+            color: #196caf;
+            margin: 16px 0 3px 0;
+            padding: 2px 0 2px 6px;
+            border-left: 4px solid #1772d0;
+            background: #f7f8fa;
+            border-radius: 3px 0 0 3px;
+            display: inline-block;
+        }
+        .news-list {
+            margin: 10px 0 22px 0;
+            padding-left: 20px;
+        }
+        .news-list li { margin-bottom: 6px; line-height: 1.52;}
+        .news-date { font-weight: bold; color:#444; min-width:44px; display: inline-block;}
+        .news-list a { color: #1772d0; text-decoration: underline; }
+        .news-list a:hover { color: #e07b04; }
     </style>
 </head>
 <body>
@@ -102,6 +122,7 @@
             <div class="contact">
                 Kanpur, India <br>
                 <a href="mailto:gauravch@iitk.ac.in">gauravch@iitk.ac.in</a> |
+                <a href="tel:+917737490113">+91 7737490113</a>
             </div>
             <div class="social">
                 <a href="https://github.com/gauravch-iitk" target="_blank">GitHub</a>
@@ -119,19 +140,59 @@
         </div>
     </section>
 
-    <!-- --------- NEWS/RECENT UPDATES (OPTIONAL) ---------- -->
-    <!--
-    <section>
-        <div class="section-title">News</div>
-        <ul>
-            <li>Paper submitted to AAAI 2025 (<i>pending</i>).</li>
-            <li>Visiting scholar, NUS Singapore, Aug-Dec 2023.</li>
-            <li>Best Paper Award at NCPC, MNIT Jaipur, 2016.</li>
-        </ul>
+    <!-- ---------- NEWS SECTION ----------- -->
+    <section class="news-section">
+      <div class="section-title">News</div>
+      <div class="news-year">2024</div>
+      <ul class="news-list">
+        <li><span class="news-date">Feb:</span> <b>Fast-Fruit-Detector</b> paper accepted to IEEE Robotics and Automation Letters (<b>RA-L</b>), 2024.</li>
+        <li><span class="news-date">Feb:</span> <b>PiX:</b> Dynamic Channel Sampling for ConvNets accepted to CVPR 2024.</li>
+        <li><span class="news-date">Jan:</span> <b>Jetson-SLAM</b> to be presented at ICRA 2024.</li>
+      </ul>
+      <hr>
+      <div class="news-year">2023</div>
+      <ul class="news-list">
+        <li><span class="news-date">Dec:</span> <b>DroneBee</b> UAVs paper accepted to IEEE RA-L, 2023.</li>
+        <li><span class="news-date">Dec:</span> Defended PhD Thesis.</li>
+        <li><span class="news-date">Nov:</span> <b>TMDC</b> microstepping control accepted to IEEE RA-L, 2023.</li>
+        <li><span class="news-date">Oct:</span> <b>Jetson-SLAM</b> accepted to IEEE RA-L, 2023.</li>
+        <li><span class="news-date">Jun:</span> Presented PhD seminar. <a href="https://drive.google.com/file/d/1rMa-LXEcBaZlNVATc6ugGHpL6PdCi4MB/view?usp=drive_link" target="_blank">Teaser Video</a></li>
+      </ul>
+      <hr>
+      <div class="news-year">2022</div>
+      <ul class="news-list">
+        <li><span class="news-date">May:</span> Team ranked 3rd worldwide in DJI Robomaster challenge.</li>
+        <li><span class="news-date">Jan:</span> <b>DeepMI</b>: Mutual Information Framework arXived.</li>
+        <li><span class="news-date">Jan:</span> Mentored IITK undergraduates for DJI Robomaster University AI challenge.</li>
+      </ul>
+      <hr>
+      <div class="news-year">2021</div>
+      <ul class="news-list">
+        <li><span class="news-date">May:</span> One paper accepted to SMC 2021.</li>
+      </ul>
+      <hr>
+      <div class="news-year">2020</div>
+      <ul class="news-list">
+        <li><span class="news-date">Oct:</span> Presented PhD seminar.</li>
+        <li><span class="news-date">Jun:</span> Challenge-2 of MBZIRC 2020 accepted to IROS.</li>
+      </ul>
+      <hr>
+      <div class="news-year">2019</div>
+      <ul class="news-list">
+        <li><span class="news-date">Jul:</span> Computer vision & electronics system lead for MBZIRC 2020, Abu Dhabi.</li>
+        <li><span class="news-date">Jun:</span> Paper accepted to IROS 2019.</li>
+        <li><span class="news-date">Jan:</span> Vision system for Amazon Robotics Challenge 2017 accepted to ICRA 2019.</li>
+      </ul>
+      <hr>
+      <div class="news-year">2018</div>
+      <ul class="news-list">
+        <li><span class="news-date">Aug:</span> Received IROS SDC travel award.</li>
+        <li><span class="news-date">Jul:</span> Joined as PhD student at <a href="https://iitk.ac.in/" target="_blank">IIT Kanpur</a> with Prof. Laxmidhar Behera.</li>
+        <li><span class="news-date">Jun:</span> Paper on textured 3D maps in IROS 2018.</li>
+      </ul>
     </section>
-    -->
 
-    <!-- ----------- EDUCATION ------------ -->
+    <!-- --------------- EDUCATION --------------- -->
     <section>
         <div class="section-title">Education</div>
         <ul>
@@ -291,7 +352,6 @@
     <div class="footer-note">
         Last updated: June 2024 &nbsp;|&nbsp; Template adapted from academic sites
     </div>
-
 </div>
 </body>
 </html>
