@@ -1,203 +1,195 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gaurav Chaudhary's Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f9f9f9;
-            color: #333;
-        }
+%-------------------------
+% Enhanced Resume in LaTeX
+% Author: Adapted for Gaurav Chaudhary from Deepak Pathak website info
+% License: MIT
+%------------------------
 
-        header {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px 0;
-        }
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym, fullpage, titlesec, marvosym, color, enumitem, hyperref, fancyhdr, babel, tabularx, hyphenat, fontawesome, ragged2e}
 
-        nav ul {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
 
-        nav ul li {
-            display: inline;
-            margin-right: 15px;
-        }
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
 
-        nav ul li a {
-            color: #ffd700;
-            text-decoration: none;
-            font-weight: bold;
-        }
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
 
-        main {
-            max-width: 900px;
-            margin: 20px auto;
-            padding: 20px;
-            background-color: #fff;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-            border-radius: 8px;
-        }
+% Section Formatting
+\titleformat{\section}{\scshape\large\raggedright}{}{0em}{}[\color{black}\titlerule]
 
-        h2 {
-            color: #333;
-            border-bottom: 2px solid #ffd700;
-            padding-bottom: 5px;
-            margin-bottom: 20px;
-        }
+% Custom Commands
+\newcommand{\resumeItem}[1]{\item\small{{#1 \vspace{-2pt}}}}
+\newcommand{\resumeSubheading}[4]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r} \textbf{#1} & #2 \\ \textit{\small#3} & \textit{\small #4} \\ \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubSubheading}[2]{\vspace{-2pt}\item\begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r} \textit{\small#1} & \textit{\small #2} \\ \end{tabular*}\vspace{-7pt}}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}[leftmargin=0.3in]}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
 
-        section {
-            margin-bottom: 20px;
-        }
+\begin{document}
 
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 10px 0;
-        }
+%---------- HEADING ----------
+\begin{center}
+    {\Huge \scshape Gaurav Chaudhary} \\ \vspace{3pt}
+    \small
+    \faMobile \hspace{0.5em} \href{tel:+917737490113}{+91 7737490113} $|$ 
+    \faAt \hspace{0.5em} \href{mailto:gauravch@iitk.ac.in}{gauravch@iitk.ac.in} $|$
+    \faMapMarker \hspace{0.5em} Kanpur, India 
+\end{center}
 
-        .contact-links a {
-            color: #ffd700;
-            text-decoration: none;
-            margin-right: 10px;
-        }
+%---------- PROFESSIONAL SUMMARY ----------
+\section{Research Statement}
+\justifying
+My research focuses on advancing reinforcement learning techniques tailored for robotics and computer vision applications. I aim to enhance agent performance through novel algorithmic developments integrating deep learning with reinforcement learning frameworks. Specifically, my work seeks to improve autonomous systems' efficiency, adaptability, and robustness in complex and dynamic environments. In my recent works, I address sample efficiency and exploration challenges of RL agents by designing a curriculum over task space and exploiting past experiences.
 
-        .contact-links a:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
-<body>
+%----------- EDUCATION -----------
+\section{Education}
+\resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {Indian Institute of Technology Kanpur (IIT Kanpur)}{Uttar Pradesh, India}
+      {Ph.D. in Electrical Engineering; \textbf{CGPA: 8.8/10.00}}{Jan 2020 -- Present}
+      \textit{Supervisor: Prof. L. Behera (Director IIT Mandi)}
+      
+    \resumeSubheading
+      {National Institute of Technology, Kurukshetra (NIT Kurukshetra)}{Haryana, India}
+      {M.Tech in Electrical Engineering; \textbf{CGPA: 8.7/10.00}}{Aug 2014 -- Jul 2016}
+      \textit{Supervisor: Prof. J. Ohri}
+      
+    \resumeSubheading
+      {Rajasthan Technical University (RTU Kota)}{Rajasthan, India}
+      {B.Tech in Electronics and Communication Engineering; \textbf{CGPA: 69.8\%}}{Jul 2009 -- Jul 2013}
+      
+\resumeSubHeadingListEnd
 
-<header>
-    <h1>Gaurav Chaudhary</h1>
-    <nav>
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#internship">Research Internship</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#achievements">Awards</a></li>
-            <li><a href="#teaching">Teaching Assistant</a></li>
-        </ul>
-    </nav>
-    <p class="contact-links"><a href="tel:+917737490113">+91 7737490113</a> | <a href="mailto:gauravch@iitk.ac.in">gauravch@iitk.ac.in</a> | Kanpur, India</p>
-</header>
+%----------- RESEARCH INTERNSHIP -----------
+\section{Research Internship}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {National University of Singapore (NUS)}{Singapore}
+      {Visiting Scholar with Prof. Lin Shao}{Aug 15, 2023 -- Dec 15, 2023 (Full-time)}
+      \resumeItemListStart
+        \resumeItem{Implemented Dreamer, TD3, and SAC RL algorithms for DiffClothAI simulator targeting soft and rigid body object insertion tasks.}
+        \resumeItem{Developed control pipeline for Flexiv Rizon-4 robotic arm for real-world object insertion experiments.}
+        \resumeItem{Co-authored the paper titled ``InsertingAnything: Model-based Insertion Skill Learning via Differentiable Physics-based Simulation''.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
 
-<main>
-    <section id="about">
-        <h2>Professional Summary</h2>
-        <p>Ph.D. candidate specializing in Machine Learning, Reinforcement Learning, and Computer Vision with experience in developing sample-efficient algorithms and advanced control strategies. Skilled in real-world robotics applications and large-scale simulation environments with a strong background in deep learning and intelligent systems.</p>
-    </section>
+%----------- PROFESSIONAL EXPERIENCE -----------
+\section{Professional Experience}
+\resumeSubHeadingListStart
+    
+    \resumeSubheading
+      {GLA University}{Uttar Pradesh, India}
+      {Assistant Professor}{Jan 2018 -- Dec 2019 (Full-time)}
+      \resumeItemListStart
+        \resumeItem{Taught undergraduate courses on Control Systems, Communication Systems, and Electronics.}
+        \resumeItem{Supervised undergraduate projects in Automation and Control.}
+        \resumeItem{Served as departmental placement coordinator, improving student placement outcomes.}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Autronicals Infotech Pvt. Ltd.}{Delhi, India}
+      {Trainer}{Aug 2016 -- Dec 2017 (Full-time)}
+      \resumeItemListStart
+        \resumeItem{Organized and delivered hands-on workshops on embedded systems and robotics at engineering colleges.}
+        \resumeItem{Designed curricula and training materials on robotics and control systems.}
+      \resumeItemListEnd
+      
+\resumeSubHeadingListEnd
 
-    <section id="research-interests">
-        <h2>Research Interests</h2>
-        <ul>
-            <li>Reinforcement Learning: Curriculum Learning, Sample Efficiency, Exploration and Offline RL.</li>
-            <li>Computer Vision: Segmentation, Object Detection, Active Perception, Image Correction.</li>
-            <li>Robot Learning: Manipulation, Control Systems, and Policy Optimization.</li>
-        </ul>
-    </section>
+%----------- PUBLICATIONS -----------
+\section{Selected Publications}
+\resumeItemListStart
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>PhD in Electrical Engineering</strong>, IIT Kanpur, CGPA: 8.8/10.00 (Jan 2020 - Present)</li>
-            <li><strong>M.Tech in Electrical Engineering</strong>, NIT Kurukshetra, CGPA: 8.7/10.00 (Aug 2014 - Jul 2016)</li>
-            <li><strong>B.Tech in Electronics and Communication Engineering</strong>, RTU KOTA, CGPA: 69.8% (Jul 2009 - Jul 2013)</li>
-        </ul>
-    </section>
+\resumeItem{\textbf{G. Chaudhary}, L. Behera, “Match or Replay: Self-Imitating Proximal Policy,” AAAI Conference on Artificial Intelligence, 2025 (Under Review).}
 
-    <section id="internship">
-        <h2>Research Internship</h2>
-        <ul>
-            <li><strong>NUS Singapore, Visiting Scholar</strong> (Aug 2023 - Dec 2023)</li>
-            <ul>
-                <li>Implemented Dreamer, TD3, and SAC RL algorithms for DiffClothAI simulator for soft and rigid body object insertion tasks.</li>
-                <li>Created a pipeline for position control of Flexiv Rizon-4 robotic arm for real-world object insertion experiments.</li>
-                <li>Co-authored paper titled "InsertingAnything: Model-based Insertion Skill Learning via Differentiable Physics-based Simulation."</li>
-            </ul>
-        </ul>
-    </section>
+\resumeItem{\textbf{G. Chaudhary}, L. Behera, “Policy Confidence Constrained Automatic Curriculum Learning for Robotic Manipulation,” AAAI Conference on Artificial Intelligence, 2025 (Under Review).}
 
-    <section id="experience">
-        <h2>Professional Experience</h2>
-        <ul>
-            <li><strong>IIT Kanpur, Sr. Student Research Associate</strong> (April 2022, Sep-Nov 2022, Jan-Apr 2023)</li>
-            <ul>
-                <li>Contributed to the Robotics and Automation in Agriculture project funded by the Ministry of Electronics and Information Technology (MeitY), Govt. of India.</li>
-            </ul>
-            <li><strong>GLA University, Assistant Professor</strong> (Jan 2018 - Dec 2019)</li>
-            <ul>
-                <li>Taught undergraduate courses in Control Systems, Communication Systems, and Electronics.</li>
-                <li>Supervised two undergraduate projects in Automation and Control.</li>
-                <li>Served as departmental placement coordinator, leading to increased student placements.</li>
-            </ul>
-            <li><strong>Autronicals Infotech Pvt. Ltd., Trainer</strong> (Aug 2016 - Dec 2017)</li>
-            <ul>
-                <li>Organized hands-on workshops on embedded systems and robotics in various engineering colleges.</li>
-                <li>Designed curriculum and delivered training sessions on robotics and control systems.</li>
-            </ul>
-        </ul>
-    </section>
+\resumeItem{P. Raj, S. Bhadang, \textbf{G. Chaudhary}, L. Behera, T. Sandhan, “Bin-Picking of Novel Objects through Category-Agnostic Segmentation: RGB Matters,” IEEE International Conference on Robotic Computing, 2023.}
 
-    <section id="publications">
-        <h2>Publications</h2>
-        <ul>
-            <li><strong>G. Chaudhary</strong>, L. Behera. “From Novelty to Imitation: Self-Distilled Rewards for Offline Reinforcement Learning,” <em>Transactions on Machine Learning Research</em> (<a href="https://openreview.net/forum?id=F5K94JI2Jb">Submitted to TMLR</a>).</li>
-            <li><strong>G. Chaudhary</strong>, W. Uddin Mondal, L. Behera. “MOORL: A Framework for Integrating Offline-Online Reinforcement Learning,” <em>Transactions on Machine Learning Research</em> (<a href="https://openreview.net/forum?id=PHsfZnF2FC">TMLR</a>).</li>
-            <li><strong>G. Chaudhary</strong>, L. Behera. “Match or Replay: Self-Imitating Proximal Policy Optimization,” <em>Transactions on Machine Learning Research</em> (<a href="https://openreview.net/forum?id=54TO3KUoYf">TMLR – Decision Pending</a>).</li>
-            <li><strong>G. Chaudhary</strong>, L. Behera. “TEACH: Temporal Variance-Driven Curriculum for Reinforcement Learning,” <em>Transactions on Machine Learning Research</em> (<a href="https://openreview.net/forum?id=pRPYXugNwc">TMLR – Decision Pending</a>).</li>
-            <li>P. Raj, S. Bhadang, <strong>G. Chaudhary</strong>, L. Behera, T. Sandhan. “Bin-Picking of Novel Objects through Category-Agnostic Segmentation: RGB Matters,” <em>IEEE International Conference on Robotic Computing (IEEE IRC)</em>, 2023.</li>
-            <li><strong>G. Chaudhary</strong>, L. Behera, T. Sandhan. “Active Perception System for Enhanced Visual Signal Recovery Using Deep Reinforcement Learning,” <em>ICASSP 2023 – IEEE International Conference on Acoustics, Speech and Signal Processing</em>, Rhodes Island, Greece, pp. 1–5, 2023. <a href="https://doi.org/10.1109/ICASSP49357.2023.10097084">doi:10.1109/ICASSP49357.2023.10097084</a>.</li>
-            <li><strong>G. Chaudhary</strong>, J. Ohri. “3-DOF Parallel Manipulator Control Using PID Controller,” <em>IEEE 1st International Conference on Power Electronics, Intelligent Control and Energy Systems (ICPEICES)</em>, Delhi, India, 2016, pp. 1–6. <a href="https://doi.org/10.1109/ICPEICES.2016.7853458">doi:10.1109/ICPEICES.2016.7853458</a>.</li>
-            <li><strong>G. Chaudhary</strong>, J. Ohri. “Tracking Control of Parallel Manipulator with 3-DOF,” <em>International Journal of Advanced Technology and Engineering Exploration</em>, vol. 3, no. 23, pp. 158, 2016.</li>
-            <li><strong>G. Chaudhary</strong>, J. Ohri. “DC Motor Speed Control Using Different PID Tuning Approach,” <em>International Conference on Emerging Trends in Science and Engineering Research</em>, NIT Manipur, Dec. 2–4, 2015.</li>
-        </ul>
-    </section>
+\resumeItem{\textbf{G. Chaudhary}, L. Behera, T. Sandhan, “Active Perception System for Enhanced Visual Signal Recovery Using Deep Reinforcement Learning,” ICASSP 2023, Rhodes Island, Greece, 2023, pp. 1–5. DOI: \href{https://doi.org/10.1109/ICASSP49357.2023.10097084}{10.1109/ICASSP49357.2023.10097084}.}
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li><strong>Languages:</strong> Python, MATLAB, C++</li>
-            <li><strong>Libraries:</strong> OpenCV, Scikit-Learn, NumPy, Pandas, Matplotlib</li>
-            <li><strong>Frameworks:</strong> PyTorch, TensorFlow, Jax</li>
-            <li><strong>Robotics Platforms:</strong> UR10, Flexiv Rizon-4</li>
-        </ul>
-    </section>
+\resumeItem{\textbf{G. Chaudhary}, J. Ohri, “3-DOF Parallel Manipulator Control Using PID Controller,” IEEE ICPEICES 2016, Delhi, India, 2016, pp. 1–6. DOI: \href{https://doi.org/10.1109/ICPEICES.2016.7853458}{10.1109/ICPEICES.2016.7853458}.}
 
-    <section id="achievements">
-        <h2>Awards & Achievements</h2>
-        <ul>
-            <li>Best Paper Award at National Conference on Process Automation and Control, MNIT Jaipur, 2016.</li>
-            <li>Scored in the top 1 percentile in GATE 2014.</li>
-            <li>First Position in Inter-Institute Circuit Designing Competition held at Rajasthan Institute of Engineering and Technology, 2011.</li>
-        </ul>
-    </section>
+\resumeItem{\textbf{G. Chaudhary}, J. Ohri, “Tracking Control of Parallel Manipulator with 3-DOF,” International Journal of Advanced Technology and Engineering Exploration, vol. 3, no. 23, pp. 158, 2016.}
 
-    <section id="teaching">
-        <h2>Teaching Assistant (IIT Kanpur)</h2>
-        <ul>
-            <li>EE 653A: Digital Control (Summer 2020)</li>
-            <li>EE 604: Image Processing (Summer 2022)</li>
-            <li>ESC 201: Introduction to Electronics (Fall 2024)</li>
-        </ul>
-    </section>
-</main>
+\resumeItem{\textbf{G. Chaudhary}, J. Ohri, “DC Motor Speed Control Using Different PID Tuning Approaches,” International Conference on Emerging Trends in Science and Engineering Research, NIT Manipur, Dec 2015.}
 
-<footer>
-    <p>&copy; 2023 Gaurav Chaudhary. All Rights Reserved.</p>
-</footer>
+\resumeItemListEnd
 
-</body>
-</html>
+%----------- THESIS -----------
+\section{Thesis}
+\resumeSubHeadingListStart
+    \resumeSubheading
+      {Master Thesis Project}{NIT Kurukshetra}
+      {Supervisor: Prof. Jyoti Ohri}{Jul 2015 -- Aug 2016 (Full-time)}
+      \resumeItemListStart
+        \resumeItem{Designed an LQR-based PID controller that uses desired performance specifications to derive LQR and state feedback gains to tune PID parameters.}
+      \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%----------- RESEARCH INTERESTS -----------
+\section{Research Interests}
+\resumeItemListStart
+    \resumeItem{Reinforcement Learning: Curriculum learning, sample efficiency, exploration, and offline RL.}
+    \resumeItem{Computer Vision: Segmentation, object detection, active perception, image correction.}
+    \resumeItem{Robot Learning: Manipulation, control systems, policy optimization.}
+\resumeItemListEnd
+
+%----------- SKILLS -----------
+\section{Skills}
+\resumeItemListStart
+  \resumeItem{\textbf{Languages:} Python, MATLAB, C++}
+  \resumeItem{\textbf{Libraries/Frameworks:} OpenCV, Scikit-Learn, NumPy, Pandas, Matplotlib, PyTorch, TensorFlow, Keras}
+  \resumeItem{\textbf{Robotics Platforms:} UR10, Flexiv Rizon-4}
+\resumeItemListEnd
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+\section{Awards \& Achievements}
+\resumeItemListStart
+  \resumeItem{Best Paper Award at National Conference on Process Automation and Control (NCPC), MNIT Jaipur, 2016.}
+  \resumeItem{Top 1 percentile in GATE 2014 exam.}
+  \resumeItem{First position in Inter-Institute Circuit Designing Competition, Rajasthan Institute of Engineering and Technology, 2011.}
+\resumeItemListEnd
+
+%----------- SERVICE -----------
+\section{Service}
+\resumeItemListStart
+    \resumeItem{Reviewer for ICASSP 2024, 2025.}
+\resumeItemListEnd
+
+%----------- TEACHING ASSISTANTSHIPS -----------
+\section{Teaching Assistantships (IIT Kanpur)}
+\resumeItemListStart
+  \resumeItem{EE 653A: Digital Control — Summer 2020}
+  \resumeItem{EE 604: Image Processing — Summer 2022}
+  \resumeItem{ESC 201: Introduction to Electronics — Fall 2024}
+\resumeItemListEnd
+
+%----------- RELEVANT COURSEWORK -----------
+\section{Relevant Coursework (IIT Kanpur)}
+\resumeItemListStart
+  \resumeItem{ME763A: Robot Manipulators: Dynamics and Control}
+  \resumeItem{EE698K: Modeling and Representation Techniques for Images}
+  \resumeItem{EE705A: Intelligent Systems and Control}
+\resumeItemListEnd
+
+%----------- REFERENCES -----------
+\section{References}
+\resumeSubHeadingListStart
+    \item{Available upon request.}
+\resumeSubHeadingListEnd
+
+\end{document}
