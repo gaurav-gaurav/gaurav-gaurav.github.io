@@ -9,8 +9,8 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    #<p>CCDS, NTU</p>
-    <p>aIALAB-1</p>
+    <p>College of Computing and Data Sciences</p>
+    <p>AIALAB-1</p>
     <p>gaurav.chaudhary@ntu.edu.sg</p>
     
 
@@ -27,7 +27,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 ---
-Gaurav Chaudhary is a **Research Fellow** at **Nanyang Technological University (NTU)** in the **Alogrithmic Robotics Group (ARG)**, Singapore, where he develops test-time adaptive diffusion policies for robotic manipulation. His research lies at the intersection of reinforcement learning, embodied AI, and robotics, with the goal of enabling robots to learn efficiently and operate reliably in complex real-world environments. 
+Gaurav Chaudhary is a **Research Fellow** at **Nanyang Technological University (NTU), Singapore** in the **Alogrithmic Robotics Group (ARG)**, where he develops test-time adaptive diffusion policies for robotic manipulation. His research lies at the intersection of reinforcement learning, embodied AI, and robotics, with the goal of enabling robots to learn efficiently and operate reliably in complex real-world environments. 
 
 He received his **PhD** in Electrical Engineering from the **Indian Institute of Technology (IIT) Kanpur** under the supervision of **Prof. Laximdar Behera**, where his research focused on sample-efficient reinforcement learning under sparse rewards and partial observability. His work develops learning frameworks that combine structured generalization, autonomous exploration, and perception-aware control to improve the robustness and scalability of embodied agents. 
 
