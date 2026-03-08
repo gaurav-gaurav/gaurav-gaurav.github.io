@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: gaurav.chaudhary@ntu.edu.sg.
+subtitle: **NTU Singapore**
 
 profile:
   align: right
