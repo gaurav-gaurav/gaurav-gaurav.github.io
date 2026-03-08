@@ -10,7 +10,7 @@ profile:
   image_circular: false # crops the image to make it circular
   more_info: >
     <p>College of Computing and Data Sciences</p>
-    <p>AIALAB-1</p>
+    <p>AI LAB-1</p>
     <p>gaurav.chaudhary@ntu.edu.sg</p>
     
 
