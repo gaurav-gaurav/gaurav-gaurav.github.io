@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: **NTU Singapore**
+subtitle: Research Fellow, NTU Singapore
 
 profile:
   align: right
