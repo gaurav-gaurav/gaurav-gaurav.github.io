@@ -31,7 +31,7 @@ Gaurav Chaudhary is a **Research Fellow** at **Nanyang Technological University 
 
 He received his **PhD** in Electrical Engineering from the **Indian Institute of Technology (IIT) Kanpur** under the supervision of **Prof. Laximdar Behera**, where his research focused on sample-efficient reinforcement learning under sparse rewards and partial observability. His work develops learning frameworks that combine structured generalization, autonomous exploration, and perception-aware control to improve the robustness and scalability of embodied agents. 
 
-His research spans the full simulation-to-real pipeline, including algorithm design, large-scale simulation experiments, and deployment on real robotic systems such as Flexiv Rizon-4 and UR10 manipulators. His work has been published in leading machine learning and robotics venues, including **TMLR, AAMAS, ICASSP, and IEEE IRC**. 
+His research spans the full simulation-to-real pipeline, including algorithm design, large-scale simulation experiments, and deployment on real robotic systems such as **Flexiv Rizon-4 and UR10 manipulators**. His work has been published in leading machine learning and robotics venues, including **TMLR, AAMAS, ICASSP, and IEEE IRC**. 
 
 **Research interests**
 - Reinforcement Learning for Robotics
