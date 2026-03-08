@@ -9,9 +9,9 @@ profile:
   image: prof_pic.jpg
   image_circular: false # crops the image to make it circular
   more_info: >
-    #<p>College of Computing and Data Sciences</p>
-    <p>555 AI LAB-1</p>
-    <p>123 gaurav.chaudhary@ntu.edu.sg</p>
+    #<p>CCDS, NTU</p>
+    <p>aIALAB-1</p>
+    <p>gaurav.chaudhary@ntu.edu.sg</p>
     
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
