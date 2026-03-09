@@ -507,11 +507,25 @@ ninja.data = [{
           section: "Teachings",handler: () => {
               window.location.href = "/teachings/introduction-to-machine-learning/";
             },},{
+        id: 'social-cv',
+        title: 'CV',
+        section: 'Socials',
+        handler: () => {
+          window.open("/Availabe%20on%20Request", "_blank");
+        },
+      },{
         id: 'social-email',
         title: 'email',
         section: 'Socials',
         handler: () => {
           window.open("mailto:%67%61%75%72%61%76.%63%68%61%75%64%68%61%72%79@%6E%74%75.%65%64%75.%73%67", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/gaurav-chaudhary-phd-254499a5", "_blank");
         },
       },{
         id: 'social-scholar',
