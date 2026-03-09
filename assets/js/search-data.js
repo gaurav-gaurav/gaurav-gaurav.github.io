@@ -511,7 +511,7 @@ ninja.data = [{
         title: 'CV',
         section: 'Socials',
         handler: () => {
-          window.open("/assets/pdf/cv", "_blank");
+          window.open("/assets/html/relativity.html", "_blank");
         },
       },{
         id: 'social-email',
