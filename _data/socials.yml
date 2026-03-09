@@ -4,7 +4,7 @@
 #cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
 email: gaurav.chaudhary@ntu.edu.sg # your email address
 #inspirehep_id: 1010907 # Inspire HEP author ID
-linkedin: gaurav-chaudhary-phd-254499a5
+#linkedin: gaurav-chaudhary-phd-254499a5
 #rss_icon:  # comment this line to hide the RSS icon
 scholar_userid: YSWeJo0AAAAJ # your Google Scholar ID
 # wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
