@@ -2,7 +2,18 @@
   title={TEACH: Temporal Variance-Driven Curriculum for Reinforcement Learning},
   author={Chaudhary, Gaurav and Behera, Laxmidhar},
   journal={arXiv preprint arXiv:2512.22824},
-  year={2025}
+  year={2025},
+  abstract = {
+Reinforcement Learning (RL) has achieved significant success in solving single-goal tasks. However, uniform goal 
+selection often results in sample inefficiency in multi-goal settings where agents must learn a universal goal-conditioned policy. 
+Inspired by the adaptive and structured learning processes observed in biological systems, we propose a novel Student-Teacher learning 
+paradigm with a Temporal Variance-Driven Curriculum to accelerate Goal-Conditioned RL. In this framework, the teacher module dynamically 
+prioritizes goals with the highest temporal variance in the policy's confidence score, parameterized by the state-action value (Q) function. 
+The teacher provides an adaptive and focused learning signal by targeting these high-uncertainty goals, fostering continual and efficient progress.
+We establish a theoretical connection between the temporal variance of Q-values and the evolution of the policy,
+providing insights into the method's underlying principles. Our approach is algorithm-agnostic and integrates seamlessly with existing RL frameworks. 
+We demonstrate this through evaluation across 11 diverse robotic manipulation and maze navigation tasks. 
+The results show consistent and notable improvements over state-of-the-art curriculum learning and goal-selection methods.},
 }
 
 @article{
