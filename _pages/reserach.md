@@ -27,7 +27,7 @@ The long-term goal is to build <strong>embodied AI systems that can learn contin
 <div class="col-sm-4">
 <h4>Reinforcement Learning</h4>
 
-Designing algorithms that improve <strong>sample efficiency and exploration<\strong> in environments with sparse rewards and partial observability.
+Designing algorithms that improve sample efficiency and exploration in environments with sparse rewards and partial observability.
 
 Key topics:
 
@@ -54,7 +54,7 @@ Focus areas:
 <div class="col-sm-4">
 <h4>Robotic Manipulation</h4>
 
-Building learning-based control policies that transfer from **simulation to physical robot platforms**.
+Building learning-based control policies that transfer from simulation to physical robot platforms.
 
 Platforms and simulators include:
 
