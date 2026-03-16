@@ -49,8 +49,8 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "news-a-paper-has-been-accpeted-for-pubication-in-ieee-icassp-2023",
-          title: 'A paper has been accpeted for pubication in IEEE ICASSP,2023.',
+            },},{id: "news-a-paper-has-been-accepted-for-publication-in-ieee-icassp-2023",
+          title: 'A paper has been accepted for publication in IEEE ICASSP,2023.',
           description: "",
           section: "News",},{id: "news-one-paper-has-been-accepted-for-publication-in-the-ieee-irc-2023",
           title: 'One paper has been accepted for publication in the IEEE IRC,2023.',
