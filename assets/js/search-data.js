@@ -49,7 +49,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "news-presented-the-open-seminar-and-submitted-the-thesis",
+            },},{id: "news-a-paper-has-been-accepted-for-publication-in-tmlr",
+          title: 'A paper has been accepted for publication in TMLR.',
+          description: "",
+          section: "News",},{id: "news-presented-the-open-seminar-and-submitted-the-thesis",
           title: 'Presented the Open Seminar and submitted the thesis.',
           description: "",
           section: "News",},{id: "news-a-paper-has-been-accepted-for-publication-in-tmlr",
