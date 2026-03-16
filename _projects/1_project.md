@@ -22,20 +22,6 @@ Key objectives included:
 - Improving **object detection and segmentation** in agricultural environments
 - Supporting robotic decision-making through visual scene understanding
 
-## Visual Perception Pipeline
-
-The perception module processes RGB images captured by onboard cameras and extracts meaningful information required for robotic actions.
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/agri_pipeline.jpg" title="Perception pipeline" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-<div class="caption">
-Illustration of the perception pipeline used to process visual data for robotic decision-making.
-</div>
-
 ## Research Contributions
 
 - Designed visual perception modules for **robotic agricultural systems**
