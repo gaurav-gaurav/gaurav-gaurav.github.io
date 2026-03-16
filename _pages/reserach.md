@@ -108,14 +108,30 @@ An RL-based system that learns to reposition cameras to maximize visual signal q
 
 ## Research Pipeline
 
-<div class="row justify-content-center">
+<div class="row justify-content-sm-center">
 
-<div class="col-sm-10">
+<div class="col-sm-4">
+{% include figure.liquid path="assets/img/pick_and_place.gif"
+title="RL training in simulation"
+class="img-fluid rounded z-depth-1" %}
+</div>
 
-{% include figure.liquid path="assets/img/research_pipeline.jpg" title="Research pipeline from algorithm design to robotic deployment" class="img-fluid rounded z-depth-1" %}
+<div class="col-sm-4">
+{% include figure.liquid path="assets/img/vision.png"
+title="Visual perception pipeline"
+class="img-fluid rounded z-depth-1" %}
+</div>
+
+<div class="col-sm-4">
+{% include figure.liquid path="assets/img/real.png"
+title="Real robot deployment"
+class="img-fluid rounded z-depth-1" %}
+</div>
 
 </div>
 
+<div class="caption">
+Research pipeline: algorithm design → simulation training → perception integration → real-world robotic deployment.
 </div>
 
 <div class="caption">
