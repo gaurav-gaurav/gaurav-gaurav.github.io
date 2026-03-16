@@ -131,7 +131,7 @@ class="img-fluid rounded z-depth-1" %}
 </div>
 
 <div class="caption">
-Research pipeline: algorithm design → simulation training → perception integration → real-world robotic deployment.
+**Research pipeline: algorithm design → simulation training → perception integration → real-world robotic deployment.**
 </div>
 
 <div class="caption">
