@@ -49,12 +49,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "news-a-long-announcement-with-details",
-          title: 'A long announcement with details',
+            },},{id: "news-successfully-defended-the-phd-thesis",
+          title: 'Successfully defended the PhD Thesis.',
           description: "",
-          section: "News",handler: () => {
-              window.location.href = "/news/announcement_2.html";
-            },},{id: "news-a-paper-has-been-accepted-for-presentation-at-aamas-2026-oral",
+          section: "News",},{id: "news-a-paper-has-been-accepted-for-presentation-at-aamas-2026-oral",
           title: 'A Paper has been accepted for presentation at AAMAS 2026 (ORAL).',
           description: "",
           section: "News",},{id: "news-joined-the-alogrithmic-robotics-group-ntu-as-research-fellow",
