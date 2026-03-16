@@ -54,7 +54,7 @@ Focus areas:
 <div class="col-sm-4">
 <h4>Robotic Manipulation</h4>
 
-Building learning-based control policies that transfer from <strong>simulation to physical robot platforms<\strong>.
+Building learning-based control policies that transfer from **simulation to physical robot platforms**.
 
 Platforms and simulators include:
 
@@ -76,7 +76,7 @@ Platforms and simulators include:
 <div class="col-sm-6">
 <h4>Hybrid Reinforcement Learning</h4>
 
-<strong>MOORL</strong> introduces a meta-policy framework that integrates offline datasets with online exploration.  
+<strong>MOORL</strong>introduces a meta-policy framework that integrates offline datasets with online exploration.  
 The method improves stability and learning efficiency while addressing distributional shift in offline data.
 </div>
 
