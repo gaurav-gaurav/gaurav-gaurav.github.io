@@ -3,6 +3,7 @@ layout: page
 title: Robotics and Automation in Agriculture
 description: Visual perception for robotic systems in agricultural environments
 importance: 1
+img: /assets/img/project.png
 category: work
 ---
 
