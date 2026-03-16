@@ -49,15 +49,15 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "news-a-simple-inline-announcement-with-markdown-emoji-sparkles-smile",
-          title: 'A simple inline announcement with Markdown emoji! :sparkles: :smile:',
-          description: "",
-          section: "News",},{id: "news-a-long-announcement-with-details",
+            },},{id: "news-a-long-announcement-with-details",
           title: 'A long announcement with details',
           description: "",
           section: "News",handler: () => {
               window.location.href = "/news/announcement_2.html";
-            },},{id: "news-joined-the-alogrithmic-robotics-group-ntu-as-research-fellow",
+            },},{id: "news-a-paper-has-been-accepted-for-presentation-at-aamas-2026-oral",
+          title: 'A Paper has been accepted for presentation at AAMAS 2026 (ORAL).',
+          description: "",
+          section: "News",},{id: "news-joined-the-alogrithmic-robotics-group-ntu-as-research-fellow",
           title: 'Joined the Alogrithmic Robotics Group @ NTU as Research Fellow.',
           description: "",
           section: "News",},{id: "projects-project-1",
