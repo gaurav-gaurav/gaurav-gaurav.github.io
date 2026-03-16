@@ -23,6 +23,13 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
+        },{id: "nav-research",
+          title: "research",
+          description: "Reinforcement learning, embodied AI, and robotic manipulation",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
         },{id: "nav-services",
           title: "services",
           description: "",
