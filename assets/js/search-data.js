@@ -49,7 +49,10 @@ ninja.data = [{
           description: "",
           section: "Books",handler: () => {
               window.location.href = "/books/the_godfather.html";
-            },},{id: "news-successfully-defended-the-phd-thesis",
+            },},{id: "news-a-paper-has-been-accepted-for-publication-in-tmlr",
+          title: 'A paper has been accepted for publication in TMLR.',
+          description: "",
+          section: "News",},{id: "news-successfully-defended-the-phd-thesis",
           title: 'Successfully defended the PhD Thesis.',
           description: "",
           section: "News",},{id: "news-a-paper-has-been-accepted-for-presentation-at-aamas-2026-oral",
