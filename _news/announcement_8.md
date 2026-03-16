@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-A paper has been accpeted for pubication in IEEE ICASSP,2023.
+A paper has been accepted for publication in IEEE ICASSP,2023.
