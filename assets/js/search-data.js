@@ -73,9 +73,9 @@ ninja.data = [{
           section: "News",},{id: "news-joined-the-alogrithmic-robotics-group-ntu-as-research-fellow",
           title: 'Joined the Alogrithmic Robotics Group @ NTU as Research Fellow.',
           description: "",
-          section: "News",},{id: "projects-project-1",
-          title: 'project 1',
-          description: "with background image",
+          section: "News",},{id: "projects-robotics-and-automation-in-agriculture",
+          title: 'Robotics and Automation in Agriculture',
+          description: "Visual perception for robotic systems in agricultural environments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
             },},{id: "projects-project-9",
