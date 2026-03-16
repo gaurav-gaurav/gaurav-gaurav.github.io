@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-One paper has been accepted for publication in IRC,2023.
+One paper has been accepted for publication in the IEEE IRC,2023.
