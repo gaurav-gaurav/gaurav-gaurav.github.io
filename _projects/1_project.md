@@ -2,7 +2,6 @@
 layout: page
 title: Robotics and Automation in Agriculture
 description: Visual perception for robotic systems in agricultural environments
-#img: assets/img/agriculture_robotics.jpg
 importance: 1
 category: work
 ---
@@ -22,24 +21,6 @@ Key objectives included:
 - Developing robust **vision-based perception pipelines**
 - Improving **object detection and segmentation** in agricultural environments
 - Supporting robotic decision-making through visual scene understanding
-
-## Example System Components
-
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/agri1.jpg" title="Agricultural environment perception" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/agri2.jpg" title="Vision-based crop detection" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.liquid loading="eager" path="assets/img/agri3.jpg" title="Robotic automation system" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-
-<div class="caption">
-Visual perception pipeline for robotic agriculture systems including crop detection, environment sensing, and robot interaction with farm environments.
-</div>
 
 ## Visual Perception Pipeline
 
