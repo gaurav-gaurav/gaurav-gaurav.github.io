@@ -10,10 +10,10 @@ nav_order: 3
 <div class="row">
 <div class="col-sm-12">
 
-My research explores how **learning algorithms can enable robots to autonomously acquire complex skills in the real world**.  
-I focus on reinforcement learning systems that are **data-efficient, robust to uncertainty, and deployable on physical robots**.
+My research explores how <strong>learning algorithms can enable robots to autonomously acquire complex skills in the real world</strong>.  
+I focus on reinforcement learning systems that are <strong>data-efficient, robust to uncertainty, and deployable on physical robots</strong>.
 
-The long-term goal is to build **embodied AI systems that can learn continuously from interaction**, bridging the gap between machine learning theory and real robotic deployment.
+The long-term goal is to build <strong>embodied AI systems that can learn continuously from interaction</strong>, bridging the gap between machine learning theory and real robotic deployment.
 
 </div>
 </div>
@@ -27,7 +27,7 @@ The long-term goal is to build **embodied AI systems that can learn continuously
 <div class="col-sm-4">
 <h4>Reinforcement Learning</h4>
 
-Designing algorithms that improve **sample efficiency and exploration** in environments with sparse rewards and partial observability.
+Designing algorithms that improve <strong>sample efficiency and exploration<\strong> in environments with sparse rewards and partial observability.
 
 Key topics:
 
@@ -54,7 +54,7 @@ Focus areas:
 <div class="col-sm-4">
 <h4>Robotic Manipulation</h4>
 
-Building learning-based control policies that transfer from **simulation to physical robot platforms**.
+Building learning-based control policies that transfer from <strong>simulation to physical robot platforms<\strong>.
 
 Platforms and simulators include:
 
