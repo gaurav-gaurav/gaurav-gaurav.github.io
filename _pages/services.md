@@ -6,10 +6,9 @@ nav: true
 nav_order: 6
 ---
 Reviewer for
-- ICASSP
-- IJCNN
 - IROS
 - RSS
 - AISTATS
 - TMLR
 - NeurIPS
+- CoRL
