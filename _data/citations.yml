@@ -1,8 +1,8 @@
 metadata:
-  last_updated: '2026-04-22'
+  last_updated: '2026-05-18'
 papers:
   YSWeJo0AAAAJ:9yKSN-GCB0IC:
-    citations: 3
+    citations: 4
     title: 'Bin-picking of novel objects through category-agnostic-segmentation: RGB matters'
     year: '2023'
   YSWeJo0AAAAJ:W7OEmFMy1HYC:
@@ -14,7 +14,7 @@ papers:
     title: 'UniInsertion: A Unified Model-based Insertion Skill Learning via Differentiable Physics-based Simulation'
     year: '2023'
   YSWeJo0AAAAJ:Y0pCki6q_DkC:
-    citations: 4
+    citations: 6
     title: 'MOORL: A Framework for Integrating Offline-Online Reinforcement Learning'
     year: '2025'
   YSWeJo0AAAAJ:YsMSGLbcyi4C:
