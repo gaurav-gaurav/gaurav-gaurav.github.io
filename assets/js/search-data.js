@@ -9,9 +9,16 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-publications",
+  },{id: "nav-research",
+          title: "research",
+          description: "Reinforcement learning, embodied AI, and robotic manipulation",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/research/";
+          },
+        },{id: "nav-publications",
           title: "publications",
-          description: "",
+          description: "Reinforcement learning, robot manipulation, and embodied AI.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/publications/";
@@ -23,26 +30,21 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/projects/";
           },
-        },{id: "nav-research",
-          title: "research",
-          description: "Reinforcement learning, embodied AI, and robotic manipulation",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/research/";
-          },
         },{id: "nav-services",
           title: "services",
-          description: "",
+          description: "Peer review and academic service.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/services/";
           },
-        },{id: "books-the-godfather",
-          title: 'The Godfather',
-          description: "",
-          section: "Books",handler: () => {
-              window.location.href = "/books/the_godfather.html";
-            },},{id: "news-a-paper-has-been-accepted-for-publication-in-ieee-icassp-2023",
+        },{id: "nav-repositories",
+          title: "repositories",
+          description: "Code, experiments and open-source work.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/repositories/";
+          },
+        },{id: "news-a-paper-has-been-accepted-for-publication-in-ieee-icassp-2023",
           title: 'A paper has been accepted for publication in IEEE ICASSP,2023.',
           description: "",
           section: "News",},{id: "news-one-paper-has-been-accepted-for-publication-in-the-ieee-irc-2023",
@@ -74,17 +76,35 @@ ninja.data = [{
           description: "Visual perception for robotic systems in agricultural environments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
-            },},{id: "teachings-data-science-fundamentals",
-          title: 'Data Science Fundamentals',
-          description: "This course covers the foundational aspects of data science, including data collection, cleaning, analysis, and visualization. Students will learn practical skills for working with real-world datasets.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/data-science-fundamentals.html";
-            },},{id: "teachings-introduction-to-machine-learning",
-          title: 'Introduction to Machine Learning',
-          description: "This course provides an introduction to machine learning concepts, algorithms, and applications. Students will learn about supervised and unsupervised learning, model evaluation, and practical implementations.",
-          section: "Teachings",handler: () => {
-              window.location.href = "/teachings/introduction-to-machine-learning.html";
             },},{
+        id: 'social-email',
+        title: 'email',
+        section: 'Socials',
+        handler: () => {
+          window.open("mailto:%67%61%75%72%61%76.%63%68%61%75%64%68%61%72%79@%6E%65%75%72%61-%72%6F%62%6F%74%69%63%73.%63%6F%6D", "_blank");
+        },
+      },{
+        id: 'social-linkedin',
+        title: 'LinkedIn',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://www.linkedin.com/in/gaurav-chaudhary-phd-254499a5", "_blank");
+        },
+      },{
+        id: 'social-scholar',
+        title: 'Google Scholar',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://scholar.google.com/citations?user=YSWeJo0AAAAJ", "_blank");
+        },
+      },{
+        id: 'social-github',
+        title: 'GitHub',
+        section: 'Socials',
+        handler: () => {
+          window.open("https://github.com/gaurav-gaurav", "_blank");
+        },
+      },{
       id: 'light-theme',
       title: 'Change theme to light',
       description: 'Change the theme of the site to Light',
