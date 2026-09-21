@@ -2,75 +2,138 @@
 layout: default
 ---
 <div class="post">
-  <header class="post-header">
-    <h1 class="post-title">
-      {% if site.title == 'blank' %}
-        <span class="font-weight-bold">{{ site.first_name }}</span> {{ site.middle_name }}
-        {{ site.last_name }}
-      {% else %}
-        {{ site.title }}
-      {% endif %}
-    </h1>
-    <p class="desc">{{ page.subtitle }}</p>
-  </header>
+  {% assign hero = page.hero %}
 
-  <article>
-    {% if page.profile %}
-      <div class="profile float-{% if page.profile.align == 'left' %}left{% else %}right{% endif %}">
-        {% if page.profile.image %}
+  <!-- ------------------------------------------------------------- Hero -->
+  <section class="gc-hero">
+    <div class="gc-hero__grid" aria-hidden="true"></div>
+    <canvas class="gc-hero__canvas" aria-hidden="true"></canvas>
+
+    <div class="gc-hero__inner">
+      <div class="gc-hero__copy">
+        {% if hero and hero.eyebrow %}
+          <span class="gc-eyebrow"><span class="dot" aria-hidden="true"></span>{{ hero.eyebrow }}</span>
+        {% endif %}
+
+        <h1 class="gc-hero__name">
+          {% if site.title == 'blank' %}
+            {{ site.first_name }} {{ site.middle_name }}<span class="gc-gradient-text"> {{ site.last_name }}</span>
+          {% else %}
+            {{ site.title }}
+          {% endif %}
+        </h1>
+
+        {% if page.subtitle %}
+          <p class="gc-hero__role">{{ page.subtitle }}</p>
+        {% endif %}
+
+        {% if hero and hero.tagline %}
+          <p class="gc-hero__tagline">
+            {{ hero.tagline }}
+            {% if hero.rotate %}
+              <span class="gc-rotator" data-gc-rotate="{{ hero.rotate }}">
+                <span class="gc-rotator__word">{{ hero.rotate | split: '|' | first }}</span>
+              </span>
+            {% endif %}
+          </p>
+        {% endif %}
+
+        {% if hero and hero.actions %}
+          <div class="gc-hero__actions">
+            {% for action in hero.actions %}
+              <a
+                class="gc-btn gc-btn--{{ action.style | default: 'ghost' }}"
+                href="{% if action.external %}{{ action.url }}{% else %}{{ action.url | relative_url }}{% endif %}"
+                {% if action.external %}target="_blank" rel="noopener"{% endif %}
+              >
+                {% if action.icon %}<i class="{{ action.icon }}" aria-hidden="true"></i>{% endif %}
+                {{ action.label }}
+              </a>
+            {% endfor %}
+          </div>
+        {% endif %}
+      </div>
+
+      {% if page.profile and page.profile.image %}
+        <div class="gc-hero__portrait">
           {% assign profile_image_path = page.profile.image | prepend: 'assets/img/' %}
           {% if page.profile.image_circular %}
-            {% assign profile_image_class = 'img-fluid z-depth-1 rounded-circle' %}
+            {% assign profile_image_class = 'rounded-circle' %}
           {% else %}
-            {% assign profile_image_class = 'img-fluid z-depth-1
-      rounded' %}
+            {% assign profile_image_class = 'rounded' %}
           {% endif %}
-          {% capture sizes %}(min-width: {{ site.max_width }}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px)
-      30vw, 95vw"{% endcapture %}
           {%
-            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class sizes=sizes alt=page.profile.image
-            cache_bust=true
+            include figure.liquid loading="eager" path=profile_image_path class=profile_image_class
+            sizes="(min-width: 768px) 17rem, 12rem" alt=page.profile.image cache_bust=true
           %}
-        {% endif %}
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
-        {% endif %}
+          {% if hero and hero.affiliation %}
+            <div class="gc-hero__affil">{{ hero.affiliation }}</div>
+          {% elsif page.profile.more_info %}
+            <div class="gc-hero__affil">{{ page.profile.more_info | strip_html | strip }}</div>
+          {% endif %}
+        </div>
+      {% endif %}
+    </div>
+  </section>
+
+  <article>
+    <!-- ---------------------------------------------------------- Stats -->
+    {% if page.stats %}
+      <div class="gc-stats gc-reveal">
+        {% for stat in page.stats %}
+          <div class="gc-stat">
+            <div class="gc-stat__value">
+              {% if stat.count %}
+                <span data-gc-count="{{ stat.count }}" {% if stat.suffix %}data-gc-suffix="{{ stat.suffix }}"{% endif %}>0</span>
+              {% else %}
+                {{ stat.value }}
+              {% endif %}
+            </div>
+            <div class="gc-stat__label">{{ stat.label }}</div>
+          </div>
+        {% endfor %}
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
+    <!-- ------------------------------------------------------- Biography -->
+    <section class="gc-section gc-prose gc-reveal">
+      <h2 id="about">about</h2>
+      {{ content }}
+    </section>
 
-    <!-- News -->
+    <!-- ------------------------------------------------------------ News -->
     {% if page.announcements and page.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
+      <section class="gc-section gc-reveal">
+        <h2><a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a></h2>
+        {% include news.liquid limit=true %}
+      </section>
     {% endif %}
 
     <!-- Latest posts -->
     {% if page.latest_posts and page.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
+      <section class="gc-section gc-reveal">
+        <h2><a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a></h2>
+        {% include latest_posts.liquid %}
+      </section>
     {% endif %}
 
-    <!-- Selected papers -->
+    <!-- ---------------------------------------------- Selected papers -->
     {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
+      <section class="gc-section gc-reveal">
+        <h2><a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a></h2>
+        {% include selected_papers.liquid %}
+      </section>
     {% endif %}
 
-    <!-- Social -->
+    <!-- ---------------------------------------------------------- Social -->
     {% if page.social %}
-      <div class="social">
-        <div class="contact-icons">{% social_links %}</div>
-
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
+      <section class="gc-section gc-reveal">
+        <h2 id="contact">contact</h2>
+        <div class="social">
+          <div class="contact-icons">{% social_links %}</div>
+          <div class="contact-note">{{ site.contact_note }}</div>
+        </div>
+      </section>
     {% endif %}
 
     {% if site.newsletter and site.newsletter.enabled and site.footer_fixed %}

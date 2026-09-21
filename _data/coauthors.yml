@@ -1,34 +1,31 @@
-"adams":
-  - firstname: ["Edwin", "E.", "E. P.", "Edwin Plimpton"]
-    url: https://en.wikipedia.org/wiki/Edwin_Plimpton_Adams
+# Coauthor name variants and links, used by jekyll-scholar to render the
+# bibliography. Add an entry per collaborator whose name should be linked
+# or whose first-name variants should be normalised.
 
-"podolsky":
-  - firstname: ["Boris", "B.", "B. Y.", "Boris Yakovlevich"]
-    url: https://en.wikipedia.org/wiki/Boris_Podolsky
+"behera":
+  - firstname: ["Laxmidhar", "L.", "Laxmidhar "]
+    url: https://www.iitk.ac.in/new/laxmidhar-behera
 
-"rosen":
-  - firstname: ["Nathan", "N."]
-    url: https://en.wikipedia.org/wiki/Nathan_Rosen
+"mondal":
+  - firstname: ["Washim Uddin", "W. U.", "Washim"]
+    url: https://www.iitk.ac.in/new/washim-uddin-mondal
 
-"bach":
-  - firstname: ["Johann Sebastian", "J. S."]
-    url: https://en.wikipedia.org/wiki/Johann_Sebastian_Bach
+"sandhan":
+  - firstname: ["Tushar", "T."]
+    url: https://www.iitk.ac.in/new/tushar-sandhan
 
-  - firstname: ["Carl Philipp Emanuel", "C. P. E."]
-    url: https://en.wikipedia.org/wiki/Carl_Philipp_Emanuel_Bach
+"shao":
+  - firstname: ["Lin", "L."]
+    url: https://linsats.github.io/
 
-"przibram":
-  - firstname: ["Karl"]
-    url: https://link.springer.com/article/10.1007/s00016-019-00242-z
+"ohri":
+  - firstname: ["Jyoti", "J."]
 
-"schrodinger":
-  - firstname: ["Erwin"]
-    url: https://en.wikipedia.org/wiki/Erwin_Schr%C3%B6dinger
+"raj":
+  - firstname: ["Prem", "P."]
 
-"lorentz":
-  - firstname: ["Hendrik Antoon"]
-    url: https://en.wikipedia.org/wiki/Hendrik_Lorentz
+"tie":
+  - firstname: ["Chenrui", "C."]
 
-"planck":
-  - firstname: ["Max"]
-    url: https://en.wikipedia.org/wiki/Max_Planck
+"mu":
+  - firstname: ["Yao", "Y."]
