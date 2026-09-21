@@ -27,11 +27,13 @@
 @use "components";
 @use "utilities";
 
+// Custom design layer (must load after theme partials so it can override)
+@use "custom";
+
 // Other specialized styles
 @use "distill";
 @use "cv";
 @use "tabs";
-@use "teachings";
 @use "typograms";
 @use "font-awesome/fontawesome";
 @use "font-awesome/brands";

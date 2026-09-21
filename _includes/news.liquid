@@ -1,33 +1,50 @@
+{% comment %}
+  News rendered as a vertical timeline. `limit=true` uses the caller page's
+  `announcements.limit` / `announcements.scrollable` settings; without it the
+  full list is rendered (used by /news/).
+{% endcomment %}
+
 <div class="news">
   {% if site.news != blank %}
     {% assign news_size = site.news | size %}
-    <div
-      class="table-responsive"
-      {% if include.limit and page.announcements.scrollable and news_size > 3 %}
-        style="max-height: 60vw"
-      {% endif %}
-    >
-      <table class="table table-sm table-borderless">
-        {% assign news = site.news | reverse %}
-        {% if include.limit and page.announcements.limit %}
-          {% assign news_limit = page.announcements.limit %}
-        {% else %}
-          {% assign news_limit = news_size %}
-        {% endif %}
-        {% for item in news limit: news_limit %}
-          <tr>
-            <th scope="row" style="width: 20%">{{ item.date | date: '%b %d, %Y' }}</th>
-            <td>
-              {% if item.inline %}
-                {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
-              {% else %}
-                <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
-              {% endif %}
-            </td>
-          </tr>
-        {% endfor %}
-      </table>
-    </div>
+    {% assign news = site.news | sort: 'date' | reverse %}
+
+    {% if include.limit and page.announcements.limit %}
+      {% assign news_limit = page.announcements.limit %}
+    {% else %}
+      {% assign news_limit = news_size %}
+    {% endif %}
+
+    {% assign scroll_class = '' %}
+    {% if include.limit and page.announcements.scrollable and news_size > news_limit %}
+      {% assign scroll_class = ' gc-timeline--scroll' %}
+    {% endif %}
+
+    <ol class="gc-timeline{{ scroll_class }}">
+      {% for item in news limit: news_limit %}
+        <li class="gc-timeline__item">
+          <time class="gc-timeline__date" datetime="{{ item.date | date_to_xmlschema }}">
+            {{ item.date | date: '%b %-d, %Y' }}
+          </time>
+          <div class="gc-timeline__body">
+            {% if item.inline %}
+              {{ item.content | remove: '<p>' | remove: '</p>' | emojify }}
+            {% else %}
+              <a class="news-title" href="{{ item.url | relative_url }}">{{ item.title }}</a>
+            {% endif %}
+          </div>
+        </li>
+      {% endfor %}
+    </ol>
+
+    {% if include.limit and news_size > news_limit %}
+      <p style="margin-top: 1rem">
+        <a class="gc-btn gc-btn--ghost" href="{{ '/news/' | relative_url }}">
+          <i class="fa-solid fa-clock-rotate-left" aria-hidden="true"></i>
+          All {{ news_size }} updates
+        </a>
+      </p>
+    {% endif %}
   {% else %}
     <p>No news so far...</p>
   {% endif %}

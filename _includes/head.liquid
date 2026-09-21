@@ -206,3 +206,9 @@
     crossorigin="anonymous"
   >
 {% endif %}
+
+<!-- Mark JS as available before first paint so reveal-on-scroll elements
+     start hidden instead of flashing in and then out. -->
+<script>
+  document.documentElement.classList.add("gc-js");
+</script>

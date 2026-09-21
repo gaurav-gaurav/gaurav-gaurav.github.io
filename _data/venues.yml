@@ -1,9 +1,30 @@
-"AJP":
-  url: https://aapt.scitation.org/journal/ajp
-  color: "#00369f"
+# Per-venue colour and link, used to style the `abbr` badge in the bibliography.
 
-"PhysRev":
-  url: https://journals.aps.org/
+"TMLR":
+  url: https://jmlr.org/tmlr/
+  color: "#4f46e5"
 
-"Vision":
-  color: "#009f36"
+"AAMAS":
+  url: https://www.aamas-conference.org/
+  color: "#0891b2"
+
+"ICASSP":
+  url: https://2023.ieeeicassp.org/
+  color: "#b45309"
+
+"IEEE IRC":
+  url: https://www.ieee-irc.org/
+  color: "#7c3aed"
+
+"arXiv":
+  url: https://arxiv.org/
+  color: "#6b7188"
+
+"Preprint":
+  color: "#6b7188"
+
+"IJATEE":
+  color: "#6b7188"
+
+"ICPEICES":
+  color: "#6b7188"
