@@ -37,13 +37,6 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/services/";
           },
-        },{id: "nav-repositories",
-          title: "repositories",
-          description: "Code, experiments and open-source work.",
-          section: "Navigation",
-          handler: () => {
-            window.location.href = "/repositories/";
-          },
         },{id: "news-a-paper-has-been-accepted-for-publication-in-ieee-icassp-2023",
           title: 'A paper has been accepted for publication in IEEE ICASSP,2023.',
           description: "",
