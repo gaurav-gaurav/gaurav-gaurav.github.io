@@ -878,7 +878,8 @@ html[data-theme="dark"] .gc-filter[aria-pressed="true"] {
 }
 
 /* Social icon row on the about page. */
-.social .contact-icons a {
+.social .contact-icons a,
+.social .contact-icons .gc-icon-static {
   display: inline-grid;
   place-items: center;
   width: 2.5rem;
@@ -899,6 +900,11 @@ html[data-theme="dark"] .gc-filter[aria-pressed="true"] {
   color: var(--brand-500);
   border-color: var(--brand-500);
   box-shadow: var(--shadow-md);
+}
+
+.social .contact-icons .gc-icon-static {
+  color: var(--ink-3);
+  cursor: default;
 }
 
 .social .contact-icons i {

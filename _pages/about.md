@@ -56,7 +56,7 @@ latest_posts:
 ---
 Gaurav Chaudhary is a **Reinforcement Learning Scientist** at [**NEURA Robotics**](https://neura-robotics.com/), Germany, in the **PLA Team**, where he develops RL policies for robotic manipulation. His work lies at the intersection of reinforcement learning, embodied AI, and robotics, with the goal of enabling robots to learn efficiently and operate reliably in complex real-world environments.
 
-Previously, he was a postdoctoral researcher in the **Algorithmic Robotics Group** at [**Nanyang Technological University**](https://www.ntu.edu.sg/), Singapore, working with [**Prof. Yoonchang Sung**](https://yoonchangsung.com/) on world-action models and uncertainty estimation for offline reinforcement learning.
+Previously, he was a postdoctoral researcher in the [**Algorithmic Robotics Group**](https://yoonchangsung.com/) at [**Nanyang Technological University**](https://www.ntu.edu.sg/), Singapore, working with [**Prof. Yoonchang Sung**](https://dr.ntu.edu.sg/entities/person/Yoonchang-Sung) on world-action models and uncertainty estimation for offline reinforcement learning.
 
 He received his **PhD** in Electrical Engineering from the [**Indian Institute of Technology (IIT) Kanpur**](https://www.iitk.ac.in/), supervised by [**Prof. Laxmidhar Behera**](https://home.iitk.ac.in/~lbehera/), where his research focused on sample-efficient reinforcement learning under sparse rewards and partial observability. That work produced learning frameworks combining structured generalization, autonomous exploration, and perception-aware control to improve the robustness and scalability of embodied agents.
 
