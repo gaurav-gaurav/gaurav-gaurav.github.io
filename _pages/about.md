@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: RL Scientist at NEURA Robotics <span class="sep">/</span> PhD, IIT Kanpur
+subtitle: AI Engineer (RL) at NEURA Robotics <span class="sep">/</span> PhD, IIT Kanpur
 
 hero:
   eyebrow: Reinforcement Learning &middot; Robotics &middot; Embodied AI
@@ -54,7 +54,7 @@ latest_posts:
   scrollable: true # adds a vertical scroll bar if there are more than 3 new post items
   limit: 3 # leave blank to include all the blog posts
 ---
-Gaurav Chaudhary is a **Reinforcement Learning Scientist** at [**NEURA Robotics**](https://neura-robotics.com/), Germany, in the **PLA Team**, where he develops RL policies for robotic manipulation. His work lies at the intersection of reinforcement learning, embodied AI, and robotics, with the goal of enabling robots to learn efficiently and operate reliably in complex real-world environments.
+Gaurav Chaudhary is an **AI Engineer (RL)** at [**NEURA Robotics**](https://neura-robotics.com/), Germany, in the **PLA Team**, where he develops RL policies for robotic manipulation. His work lies at the intersection of reinforcement learning, embodied AI, and robotics, with the goal of enabling robots to learn efficiently and operate reliably in complex real-world environments.
 
 Previously, he was a postdoctoral researcher in the [**Algorithmic Robotics Group**](https://yoonchangsung.com/) at [**Nanyang Technological University**](https://www.ntu.edu.sg/), Singapore, working with [**Prof. Yoonchang Sung**](https://dr.ntu.edu.sg/entities/person/Yoonchang-Sung) on world-action models and uncertainty estimation for offline reinforcement learning.
 

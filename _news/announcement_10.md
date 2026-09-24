@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Joined <mark>NEURA Robotics</mark> as an AI Engineer.
+Joined <mark>NEURA Robotics</mark> as an AI Engineer (RL).
