@@ -15,6 +15,7 @@ footer_text: >
   Built with <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> and the
   <a href="https://github.com/alshedivat/al-folio" target="_blank">al-folio</a> theme.
   Hosted on <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+  <a href="https://github.com/gaurav-gaurav/gaurav-gaurav.github.io" target="_blank">Source on GitHub</a>.
 keywords: reinforcement learning, robotics, embodied AI, robot manipulation, diffusion policy, sim-to-real, offline RL, NEURA Robotics, Gaurav Chaudhary
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: 🦾 # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
