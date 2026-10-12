@@ -38,8 +38,3 @@ hand-designed image-quality metric.
 Released at
 [gaurav-gaurav/RL-for-object-detection](https://github.com/gaurav-gaurav/RL-for-object-detection)
 — training and evaluation scripts, policy variants and the annotation tooling.
-
-This is distinct from the
-[active-perception work](https://github.com/gaurav-gaurav/ICASSP_RL-2023)
-published at ICASSP 2023, which moves the camera to find a better viewpoint
-rather than correcting the image it already has.
