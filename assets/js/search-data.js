@@ -72,6 +72,11 @@ ninja.data = [{
           description: "Visual perception for robotic systems in agricultural environments",
           section: "Projects",handler: () => {
               window.location.href = "/projects/1_project.html";
+            },},{id: "projects-learned-image-correction-for-object-detection",
+          title: 'Learned Image Correction for Object Detection',
+          description: "An RL agent that repairs a degraded image before a frozen detector sees it",
+          section: "Projects",handler: () => {
+              window.location.href = "/projects/2_image_correction_rl.html";
             },},{
         id: 'social-email',
         title: 'email',
