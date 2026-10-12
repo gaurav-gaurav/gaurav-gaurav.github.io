@@ -438,6 +438,37 @@
     start();
   }
 
+
+  /* ------------------------------------------------ visitor count */
+
+  /* Reads the running total from GoatCounter's public counter endpoint.
+   * The element starts hidden and is only revealed once a number arrives, so
+   * a blocked request, an offline visitor, or a site that has not enabled
+   * public counts simply shows nothing rather than a broken label. */
+
+  function initVisitorCount() {
+    var el = document.querySelector(".gc-visits");
+    if (!el) return;
+
+    var code = el.getAttribute("data-goatcounter-code");
+    if (!code) return;
+
+    fetch("https://" + code + ".goatcounter.com/counter/TOTAL.json")
+      .then(function (r) {
+        if (!r.ok) throw new Error(r.status);
+        return r.json();
+      })
+      .then(function (data) {
+        var n = parseInt(String(data.count).replace(/[^0-9]/g, ""), 10);
+        if (!n) return;
+        el.querySelector(".gc-visits__n").textContent = n.toLocaleString();
+        el.hidden = false;
+      })
+      .catch(function () {
+        /* leave it hidden */
+      });
+  }
+
   /* ----------------------------------------------------------- bootstrap */
 
   function init() {
@@ -449,6 +480,7 @@
     initCounters();
     initPublicationFilters();
     initHeroCanvas();
+    initVisitorCount();
   }
 
   if (document.readyState === "loading") {

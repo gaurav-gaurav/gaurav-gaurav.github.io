@@ -377,6 +377,14 @@ enable_google_analytics: false # enables google analytics
 enable_cronitor_analytics: false # enables cronitor RUM analytics
 enable_pirsch_analytics: false # enables Pirsch analytics (https://pirsch.io/)
 enable_openpanel_analytics: false # enables Openpanel analytics (https://openpanel.dev/)
+
+# Visitor counter (GoatCounter — free, cookieless, no personal data).
+# 1. Register the site at https://www.goatcounter.com/ and note your code
+#    (the <code> in https://<code>.goatcounter.com).
+# 2. In GoatCounter: Settings -> tick "Allow adding visitor counts on your website".
+# 3. Put the code below. Leave blank to disable both tracking and the counter.
+goatcounter_code: # e.g. gaurav-gaurav
+show_visitor_count: true # display the running total in the footer
 enable_google_verification: false # enables google site verification
 enable_bing_verification: false # enables bing site verification
 enable_cookie_consent: false # enables GDPR-compliant cookie consent dialog (https://github.com/orestbida/cookieconsent)

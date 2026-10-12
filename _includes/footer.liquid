@@ -9,6 +9,11 @@
   {% if site.last_updated %}
     Last updated: {{ 'now' | date: '%B %d, %Y' }}.
   {% endif %}
+  {% if site.goatcounter_code and site.show_visitor_count %}
+    <span class="gc-visits" data-goatcounter-code="{{ site.goatcounter_code }}" hidden>
+      <span class="gc-visits__n"></span> visits
+    </span>
+  {% endif %}
 {% endcapture %}
 
 {% if site.footer_fixed %}

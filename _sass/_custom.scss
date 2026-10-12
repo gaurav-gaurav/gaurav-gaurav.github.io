@@ -933,3 +933,14 @@ footer.sticky-bottom {
   border-radius: 999px !important;
   box-shadow: var(--shadow-md);
 }
+
+/* Visitor count in the footer. Hidden until a number arrives. */
+.gc-visits {
+  margin-left: 0.4rem;
+  font-variant-numeric: tabular-nums;
+  opacity: 0.75;
+}
+
+.gc-visits__n {
+  font-weight: 600;
+}
