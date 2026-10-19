@@ -7,7 +7,7 @@ first_name: Gaurav
 #middle_name:
 last_name: Chaudhary
 contact_note: >
-  You can reach me via Email and LinkedIn.
+  The best way to reach me is LinkedIn.
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Gaurav Chaudhary — Reinforcement Learning Scientist at NEURA Robotics.
   Research on RL for robotics, diffusion policies, embodied AI and sim-to-real manipulation.
