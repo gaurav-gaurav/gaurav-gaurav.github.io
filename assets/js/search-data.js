@@ -78,13 +78,6 @@ ninja.data = [{
           section: "Projects",handler: () => {
               window.location.href = "/projects/2_image_correction_rl.html";
             },},{
-        id: 'social-email',
-        title: 'email',
-        section: 'Socials',
-        handler: () => {
-          window.open("mailto:%67%61%75%72%61%76.%63%68%61%75%64%68%61%72%79@%6E%65%75%72%61-%72%6F%62%6F%74%69%63%73.%63%6F%6D", "_blank");
-        },
-      },{
         id: 'social-linkedin',
         title: 'LinkedIn',
         section: 'Socials',
